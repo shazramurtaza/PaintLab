@@ -1,0 +1,159 @@
+{
+  "wrapper": "div.wrapper-content",
+  "sections": {
+    "banner1": {
+      "type": "home-custom-block-baner-collection-list",
+      "settings": {
+        "layout": "default",
+        "margin_bottom_mb": 25,
+        "margin_bottom_tab": 30,
+        "margin_bottom": 30
+      }
+    },
+    "banner2": {
+      "type": "home-custom-product-collection-list",
+      "settings": {
+        "slider_collection_limit": 5,
+        "bg_collection_button": "#ffffff",
+        "border_collection_button": "#dadada",
+        "color_collection_button": "#27221b",
+        "min_width_collection_button": "252px",
+        "margin_bottom_mb": 40,
+        "margin_bottom_tab": 40,
+        "margin_bottom": 0
+      }
+    },
+    "16566597828bc54e98": {
+      "type": "home-collections",
+      "blocks": {
+        "165665978291dce8bc-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/R017-9-500x500-1.jpg",
+            "title": "9\" - 18\" Roller Frames",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "9-18-roller-frames"
+          }
+        },
+        "165665978291dce8bc-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dr10-1-500x500_1.jpg",
+            "title": "Jumbo Roller Frames",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "jumbo-roller-frames"
+          }
+        },
+        "165665978291dce8bc-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/618612-1-500x490_d35d3449-fec9-4945-8bc6-f0c018d6eba2.jpg",
+            "title": "Mini Roller Frames",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "mini-roller-frames"
+          }
+        }
+      },
+      "block_order": [
+        "165665978291dce8bc-0",
+        "165665978291dce8bc-1",
+        "165665978291dce8bc-2"
+      ],
+      "settings": {
+        "title": "ROLLER FRAMES",
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    },
+    "16566652668003429d": {
+      "type": "home-collections",
+      "blocks": {
+        "1656665266dd141502-0": {
+          "type": "image",
+          "settings": {
+            "title": "Cosmopolis",
+            "color_title": "#ffffff",
+            "btn_shop_now": "Shop Now",
+            "link": ""
+          }
+        },
+        "1656665266dd141502-1": {
+          "type": "image",
+          "settings": {
+            "title": "Cosmopolis",
+            "color_title": "#ffffff",
+            "btn_shop_now": "Shop Now",
+            "link": ""
+          }
+        },
+        "1656665266dd141502-2": {
+          "type": "image",
+          "settings": {
+            "title": "Cosmopolis",
+            "color_title": "#ffffff",
+            "btn_shop_now": "Shop Now",
+            "link": ""
+          }
+        },
+        "1656665266dd141502-3": {
+          "type": "image",
+          "settings": {
+            "title": "Cosmopolis",
+            "color_title": "#ffffff",
+            "btn_shop_now": "Shop Now",
+            "link": ""
+          }
+        },
+        "1656665266dd141502-4": {
+          "type": "image",
+          "settings": {
+            "title": "Cosmopolis",
+            "color_title": "#ffffff",
+            "btn_shop_now": "Shop Now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656665266dd141502-0",
+        "1656665266dd141502-1",
+        "1656665266dd141502-2",
+        "1656665266dd141502-3",
+        "1656665266dd141502-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "title_style": "style_1",
+        "layout": "default",
+        "content_style": "style_1",
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "5",
+        "btn_view_all": "View All Collections",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner1",
+    "banner2",
+    "16566597828bc54e98",
+    "16566652668003429d"
+  ]
+}

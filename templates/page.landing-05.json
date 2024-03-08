@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": true
+      }
+    },
+    "1656696967d81e0fdb": {
+      "type": "home-collections",
+      "blocks": {
+        "165669696632057925-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Graco_FFLP_Spray_Tip.png",
+            "title": "Airless Tips & Guards",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "airless-tips-guards-1"
+          }
+        },
+        "c2caa5f9-aa21-4f0b-9e37-9384cc6e1187": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ca3abda8b6828d836d5e5d88e8e45e841e323143f8abe0a06a82bbb000cdf84b__06298.1591228258_ef917b18-47e7-426b-ac34-4c915751b3f5.jpg",
+            "title": "Needles & Nozzles",
+            "color_title": "#232323",
+            "btn_shop_now": "Shop Now",
+            "link": "needles-nozzles"
+          }
+        },
+        "image_GLe9zN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Graco_Gun_Filter.png",
+            "title": "Filters",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "filters"
+          }
+        },
+        "fa9d55c0-5289-4486-b5c9-8a2fa3242b35": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ANTI-PULSE_NYLON_HOSE_270BAR_1_4__NPS_THREAD_7.5MTR.png",
+            "title": "Hoses & Connectors",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "hoses-connectors"
+          }
+        },
+        "64efaa22-637f-4160-81d5-ad426f2010c3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fmt5500_a.png",
+            "title": "Spraying Accessories",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spraying-accessories"
+          }
+        },
+        "image_fHq8aF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hyde-spray-shield-with-holder-for-cardboard.png",
+            "title": "Spraying Shields",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-shield"
+          }
+        },
+        "image_tJcWpe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BSGC5__12404.png",
+            "title": "Cleaning & Maintenance",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "sprayer-maintenance"
+          }
+        },
+        "image_emrdHN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fast-Movers-Paint-Mixing-Cups.png",
+            "title": "Cups",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "cups"
+          }
+        }
+      },
+      "block_order": [
+        "165669696632057925-4",
+        "c2caa5f9-aa21-4f0b-9e37-9384cc6e1187",
+        "image_GLe9zN",
+        "fa9d55c0-5289-4486-b5c9-8a2fa3242b35",
+        "64efaa22-637f-4160-81d5-ad426f2010c3",
+        "image_fHq8aF",
+        "image_tJcWpe",
+        "image_emrdHN"
+      ],
+      "settings": {
+        "title": "Consumables",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1656696967d81e0fdb"
+  ]
+}

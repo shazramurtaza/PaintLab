@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tikkurila_saunasuoja_interior_wood_stain.png",
+            "title": "Wood Stain & Oil",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wood-stain-oil"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wood-Wax-Finish2-removebg_3c758cde-aac8-4095-bb37-c331207c3d3e.png",
+            "title": "Wood Wax",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wood-wax"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/quick-dry-floor-varnish-440x315.png",
+            "title": "Varnish & Lacquer",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-varnish-lacquer"
+          }
+        },
+        "image_TfGpWY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TopOil-removebg_1d4b2c47-84dd-4bdb-8388-dca020be4cfe.png",
+            "title": "Worktop Stain & Oil",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "worktop-stain-oil"
+          }
+        },
+        "image_aWg6Em": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Polyx-Oil-Effect-Raw-3044-removebg_1ee06943-29da-43d6-b8ae-1db12f56d4f0.png",
+            "title": "Furniture Stain & Oil",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-furniture-stain-oil"
+          }
+        },
+        "image_tAGTaY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Polyx-Oil-Original-removebg_65d47de9-7f4b-427e-afe3-217426670ce7.png",
+            "title": "Wood Floor Stain & Oil",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "wood-floor-stain-oil"
+          }
+        },
+        "image_X9cnq4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash-and-Care-video-removebg_e58d2c20-3ba4-4827-98bd-0e2058326b8c.png",
+            "title": "Cleaning Solution",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wood-cleaning"
+          }
+        },
+        "image_meHW4X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/toupret_wood_repair_filler_1kg.png",
+            "title": "Wood Filler",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "wood-fillers"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_TfGpWY",
+        "image_aWg6Em",
+        "image_tAGTaY",
+        "image_X9cnq4",
+        "image_meHW4X"
+      ],
+      "settings": {
+        "title": "Interior Wood Care",
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

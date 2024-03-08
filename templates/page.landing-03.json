@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": true
+      }
+    },
+    "16566699624e507455": {
+      "type": "home-collections",
+      "blocks": {
+        "16566699622dc34f14-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cq5dam.web.jpg",
+            "title": "Electric Airless Paint Sprayers",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "spraying-machines"
+          }
+        },
+        "16566699622dc34f14-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Graco_mini_merkur_air_assisted_airless.png",
+            "title": "Air Assisted Airless Paint Sprayers",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "air-assisted"
+          }
+        },
+        "16566699622dc34f14-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Apollo-Precision-5_-Limited-Edition_0000_Prescision-5-Pro-7700QT-Limited-Edition-500x500.jpg",
+            "title": "HVLP Paint Sprayers",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "hvlp"
+          }
+        }
+      },
+      "block_order": [
+        "16566699622dc34f14-0",
+        "16566699622dc34f14-2",
+        "16566699622dc34f14-1"
+      ],
+      "settings": {
+        "title": "Paint Spraying Machines",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566699624e507455"
+  ]
+}

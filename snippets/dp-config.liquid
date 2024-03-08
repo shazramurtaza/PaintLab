@@ -1,0 +1,69 @@
+<script type="text/javascript">
+    function runDisplayDualPriceOverride(arguments) {
+        jQuery = arguments[0];
+        setTimeout(function () {
+            if (!isCart) {
+            if (parseInt(dp_activate_app) == 1) {
+                jQuery('.dualPrice').hide();
+                jQuery('.styleForDualPrice').remove();
+                products = [];
+                jQuery('a[href]').each(function() {
+                    href = jQuery(this).attr('href');
+                    if (href.indexOf('products/') !== -1 && !checkImg(href) && !callFunctionDP('checkIfContainNotAllowedSubstrings', [href], true)) {
+                        productHandle = callFunctionDP('getProductHandle', [jQuery, href], true);
+                        if (!checkImg(productHandle)) {
+                            if (typeof productDPHandle !== 'undefined') {
+                                if (productDPHandle != productHandle) {
+                                    products.push({'href': href, 'handle': productHandle});
+                                }
+                            } else {
+                                products.push({'href': href, 'handle': productHandle});
+                            }
+                        }
+                    }
+                });
+                ajaxRequests = [];
+                ajaxProducts = [];
+                jQuery.each(products, function(index, value) {
+                    ajaxRequests.push(jQuery.getJSON('/products/' + value.handle + '.js?app=dualPrice')
+                        .done(function(product) {
+                            ajaxProducts.push(product);
+                        }));
+                });
+    
+                result = jQuery.when.apply(jQuery, ajaxRequests).always(function() {
+                    setTimeout(function() {
+                        jQuery.each(ajaxProducts, function(index, product) {
+                            jQuery('a[href]').each(function() {
+                                aObject = jQuery(this);
+                                productHandle = callFunctionDP('getProductHandle', [jQuery, aObject.attr('href')], true);
+                                if (aObject.attr('href').indexOf('products/') !== -1 && (product.handle == productHandle || productHandle == encodeURI(product.handle))) {
+                                    pathToPrice = callFunctionDP('getPricePath', [jQuery, aObject], true);
+                                    if (pathToPrice != null) {
+                                        callFunctionDP('showDualPrice', [jQuery, product.price, product.compare_at_price, pathToPrice, 'dp_catalog', dp_money_format, product.variants[0].taxable], true);
+                                    }
+                                }
+                            });
+                            callFunctionDP('hideOtherProductCatalogPrices', [jQuery], false);
+                            jQuery('.dualPrice').show();
+                            if (typeof productDPHandle !== 'undefined') {
+                                callFunctionDP('renderProductDetail', [jQuery, dp_price_path], false);
+                            }
+                        });
+                    }, 100);
+                });
+                setTimeout(function() {
+                    callFunctionDP('tryToFindPricesOneMoreTime', [jQuery], false);
+                }, 3000);
+                if (typeof productDPHandle !== 'undefined') {
+                    callFunctionDP('renderProductDetail', [jQuery, dp_price_path], false);
+                }
+            } else {
+                jQuery('.dualPrice').show();
+            }
+        } else {
+            jQuery('.dualPrice').show();
+        }
+        }, 1000)
+    }
+</script>

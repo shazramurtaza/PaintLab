@@ -1,0 +1,202 @@
+{
+  "wrapper": "div.page-tpl.about-us-2",
+  "sections": {
+    "header": {
+      "type": "page-header",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/paintlab-products_6.jpg",
+        "text_color": "#ffffff",
+        "menu": "",
+        "menu_bar_background": "#e3e3e3",
+        "menu_bar_border": "",
+        "menu_item_background": "",
+        "menu_item_text_color": "",
+        "menu_item_background_color_h": "",
+        "menu_item_text_color_h": ""
+      }
+    },
+    "main": {
+      "type": "about-us-2-content",
+      "blocks": {
+        "4eaa4f94-1d24-4be3-9d24-e5ecc13e757a": {
+          "type": "top_content",
+          "disabled": true,
+          "settings": {
+            "display_banner": true,
+            "banner": "shopify:\/\/shop_images\/paintlab-products_3.jpg",
+            "alignment": "right",
+            "title_1": "Our Story",
+            "content_1": "PAINT LAB is a brokering supplier DIRECT to Painters and Contractors who furnish their own painting supplies for New Construction, Remodel, Rehab, Real Estate Make Ready and Residential jobs.​Leading Sources have increased selling prices in recent years – so PAINT LAB offers you savings through unique sources due to our vast associations in the Painting Industry.​With more than 50 years of combined experience, we are able to save you time and money by providing you with the best Products needed for the job at the best price in the market. We have immediate access to more than 10,000 paint related products from the leading manufacturers in the industry.",
+            "title_2": "",
+            "content_2": "",
+            "title_3": "",
+            "content_3": "",
+            "title_4": "",
+            "content_4": "",
+            "title_5": "",
+            "content_5": ""
+          }
+        },
+        "edf16d68-1dda-4307-a540-05b1f67d7271": {
+          "type": "top_content",
+          "disabled": true,
+          "settings": {
+            "display_banner": true,
+            "banner": "shopify:\/\/shop_images\/paintlab-products_1.jpg",
+            "alignment": "left",
+            "title_1": "Our Mission",
+            "content_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "title_2": "",
+            "content_2": "",
+            "title_3": "",
+            "content_3": "",
+            "title_4": "",
+            "content_4": "",
+            "title_5": "Title",
+            "content_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "4eaa4f94-1d24-4be3-9d24-e5ecc13e757a",
+        "edf16d68-1dda-4307-a540-05b1f67d7271"
+      ],
+      "settings": {
+        "display_top_content": true,
+        "top_heading": "Paintlab Limited",
+        "top_subheading": "PAINT LAB is a brokering supplier DIRECT to Painters and Contractors who furnish their own painting supplies for New Construction, Remodel, Rehab, Real Estate Make Ready and Residential jobs.​Leading Sources have increased selling prices in recent years – so PAINT LAB offers you savings through unique sources due to our vast associations in the Painting Industry.​With more than 50 years of combined experience, we are able to save you time and money by providing you with the best Products needed for the job at the best price in the market. We have immediate access to more than 10,000 paint related products from the leading manufacturers in the industry.",
+        "border_color": "#a6a6a6",
+        "top_content_bgc": "#fafafa",
+        "top_content_tt_size": "30",
+        "top_content_ttc": "#232323",
+        "top_content_txtc": "#3c3c3c",
+        "dots_color": "#9c9c9c",
+        "display_bottom_content": false,
+        "bot_heading": "Behind the scene",
+        "bot_subheading": "Phasellus lorem malesuada ligula pulvinar commodo maecenas suscipit auctom."
+      }
+    },
+    "1625988159fe7a6ee2": {
+      "type": "home-custom-block-spotlight",
+      "disabled": true,
+      "blocks": {
+        "1625988159fe7a6ee2-0": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        },
+        "1625988159fe7a6ee2-1": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        },
+        "1625988159fe7a6ee2-2": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        }
+      },
+      "block_order": [
+        "1625988159fe7a6ee2-0",
+        "1625988159fe7a6ee2-1",
+        "1625988159fe7a6ee2-2"
+      ],
+      "settings": {
+        "layout": "default",
+        "layout_style": "layout_style_1",
+        "margin_bottom_mb": 25,
+        "margin_bottom_tab": 35,
+        "margin_bottom": 35,
+        "spotlight_block_title": "#Featured On Ella",
+        "spotlight_block_des": "",
+        "title_style": "style_1"
+      }
+    },
+    "165656378734b1ec96": {
+      "type": "home-brands-2",
+      "blocks": {
+        "af543190-a58c-42dd-a2bf-e53a2b2cfab9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roll-a-tray-MAX-logo-1-e1634806691772_256x256_364c8b25-e555-47d6-9845-d71f9207274c.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "3ecd1c0c-458a-430e-a1ba-b71bab60086b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/zorr-corp-orange-black_logo-1-e1634806516542_256x256_5607637e-cd54-441c-b143-afa239e810af.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "69f7bdd4-4d2c-44f0-bc78-38cd578ee874": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wooster_Logo_256x256_298327fe-47fa-4ef5-a056-b4611145d507.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "d772c695-f582-4064-990b-5334154e02cd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dolphin_256x256_026b0448-cf79-4f84-90f6-d3b2ea9ac35b.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "af543190-a58c-42dd-a2bf-e53a2b2cfab9",
+        "3ecd1c0c-458a-430e-a1ba-b71bab60086b",
+        "69f7bdd4-4d2c-44f0-bc78-38cd578ee874",
+        "d772c695-f582-4064-990b-5334154e02cd"
+      ],
+      "settings": {
+        "layout": "padd_60",
+        "view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0,
+        "brand_title": "PROUD TO BE ASSOCIATED WITH",
+        "color_title": "",
+        "font_size_title": "24px",
+        "font_size_title_mb": "18px",
+        "font_weight_title": "700",
+        "text_transform_title": "uppercase",
+        "title_style": "style_2",
+        "brand_des": "",
+        "brand_rows": "4",
+        "show_brand_rows": "1",
+        "brand_item_style": "style_2"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main",
+    "1625988159fe7a6ee2",
+    "165656378734b1ec96"
+  ]
+}

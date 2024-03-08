@@ -1,0 +1,51 @@
+{% case lookup_item %}
+  {% when 'Ireland' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/ie.svg?v=1670385066' %}
+  {% when 'Sweden' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/se.svg?v=1670385088' %}
+  {% when 'United Kingdom' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/gb.svg?v=1670385050' %}
+  {% when 'Belgium' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/be.svg?v=1673487424' %}
+  {% when 'Austria' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/at.svg?v=1673523035' %}
+  {% when 'Czechia' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/cz.svg?v=1673523033' %}
+  {% when 'Estonia' %}
+    {% comment %}{% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/ee.svg?v=1673523033' %}{% endcomment %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/ee_f6ad4d5f-aea8-4e1f-a4ea-adcfcc1eb6b2.svg?v=1707128589' %}
+  {% when 'France' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/fr.svg?v=1673523033' %}
+  {% when 'Germany' %}
+    {% comment %}{% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/de.svg?v=1673523033' %}{% endcomment %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/de_d6a374cb-80a3-4186-a3f6-cf6137e9127a.svg?v=1707128333' %}
+  
+  {% when 'Luxembourg' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/lu.svg?v=1673523033' %}
+  {% when 'Netherlands' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/nl.svg?v=1673523033' %}
+  {% when 'Switzerland' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/ch.svg?v=1673523033' %}
+  {% when 'Croatia' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/hr.svg?v=1673523229' %}
+  {% when 'Finland' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/fi.svg?v=1707126960' %}
+  {% when 'Hungary' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/hu.svg?v=1707127176' %}
+  {% when 'Portugal' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/pt.svg?v=1707127318' %}
+  {% when 'Romania' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/ro.svg?v=1707127765' %}
+  {% when 'Bulgaria' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/bg.svg?v=1707127961' %}
+  {% when 'Italy' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/it.svg?v=1707128052' %}
+  {% when 'Poland' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/pl.svg?v=1707128194' %}
+  {% when 'Spain' %}
+    {% assign flag = 'https://cdn.shopify.com/s/files/1/0645/5594/2100/files/es.svg?v=1707128254' %}
+  {% else %}
+    {% assign flag = '' %}
+{% endcase %}
+
+{{ flag }}

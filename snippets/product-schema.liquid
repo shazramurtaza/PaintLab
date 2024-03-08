@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Product",
+ "image": "{{ shop.url }}{{ product.featured_image }}",
+"description": "{{ page_description }}",
+"url": "{{ shop.url }}{{ product.url }}",
+  "brand" : {
+    "@type" : "Brand",
+    "name" : "Paintable",
+    "logo" : "https://cdn.shopify.com/s/files/1/0645/5594/2100/files/PAINTLAB_logo_web__no_brush_-03.png?v=1655208083"
+ 		 },
+    },
+    "datePublished" : "10/10/2022",
+    "reviewRating" : {
+      "@type" : "Rating",
+      "bestRating": "5",
+      "ratingValue" : "5"
+    },
+    "reviewBody" : "Review description"
+},
+  "aggregateRating" : {
+    "@type" : "AggregateRating",
+    "ratingValue" : "5",
+    "bestRating" : "5 star",
+    "worstRating" : "4 star",
+    "ratingCount" : "55"
+  },
+"offers" : {
+    "@type" : "Offer",
+	"availability" : "https://schema.org/InStock",
+	"priceValidUntil" : "2025-12-31",
+    "name": "{{ product.title }}",
+    "price": 49,
+    "priceCurrency" : "EURO",
+    "url": "{{ shop.url }}{{ product.url }}",
+	"itemCondition": "http://schema.org/NewCondition",
+   "availability": "http://schema.org/InStock"
+  }
+  }
+}
+</script>

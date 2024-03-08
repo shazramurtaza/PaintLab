@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "cart_notes": true,
+        "secure_text": "Secure Shopping Guarantee.",
+        "img_trust": "shopify:\/\/shop_images\/trust_800x_45b63f7c-f3f0-4e29-88b1-6aa77ac73f34.png",
+        "cart_countdown_enable": false,
+        "time_countdown": 30,
+        "coupon_code_enable": true,
+        "coupon_title": "Coupon Code:",
+        "coupon_content": "Coupon code will be applied on the checkout page",
+        "gift_card_enable": false,
+        "product_to_use": "",
+        "gift_content": "",
+        "button_gift_text": "Add",
+        "show_cart_best_sellers_product": true,
+        "title": "Best Sellers",
+        "show_slider_featured_collection": "new-arrivals",
+        "slider_featured_limit_all": 16,
+        "collection_results_per_row1": "6"
+      }
+    },
+    "1689344743ec1a2aa2": {
+      "type": "apps",
+      "blocks": {
+        "5dae963d-7217-4830-9647-2b4911bd91b6": {
+          "type": "shopify:\/\/apps\/discounty\/blocks\/app-cart\/d65eb522-0d94-499f-9831-d4b3301f5340",
+          "settings": {
+            "totalLabel": "Total",
+            "savedLabel": "Saving",
+            "align": "end",
+            "lineThrough": true
+          }
+        }
+      },
+      "block_order": [
+        "5dae963d-7217-4830-9647-2b4911bd91b6"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1689344743ec1a2aa2"
+  ]
+}

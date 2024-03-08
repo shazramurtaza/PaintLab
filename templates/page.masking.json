@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300-1-04.png",
+            "title": "Masking Tapes",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "masking-tapes"
+          }
+        },
+        "image_Cd9DWt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Barracuda_Pofessionel_Grade_Duct_Tape.png",
+            "title": "Duct Tapes",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "duct-tapes"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Q1_Pre-Folded_Masking_Film.png",
+            "title": "Masking Paper & Films",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "masking-paper-films"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nerpel_Painters_Pro_Floor_Protection_Paper.png",
+            "title": "Floor Protection",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "floor-protection"
+          }
+        },
+        "image_FBgBe9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3m_masker_new-750x750-removebg-preview_407c31dd-f046-4a78-aa6e-48a2db3c5f1c.png",
+            "title": "Masking Dispensers",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "masking-dispensers"
+          }
+        },
+        "image_UPxeVU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Q1_-Systainer-MT1834437_02_588x335_fbb90228-98ae-452a-ac77-fe17febfcdc5.png",
+            "title": "Storage",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "tool-storage"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "image_Cd9DWt",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_FBgBe9",
+        "image_UPxeVU"
+      ],
+      "settings": {
+        "title": "Masking",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#0f0f0f",
+        "font_size_title": "22px",
+        "collection_results_per_row": "6",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

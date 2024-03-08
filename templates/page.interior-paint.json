@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_otex_akva_0_9L_2.png",
+            "title": "Primers & Undercoats",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-primers-undercoats"
+          }
+        },
+        "image_DrXEUf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_helmi10_0_9L_2_183dfb50-c2ef-4bdd-9797-ddafd15e9f39.png",
+            "title": "Doors, Windows & Trim Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-trim"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_optiva_matt5_9L_1_dd405e6d-0788-4257-8816-f5ce3e2487d2.png",
+            "title": "Wall Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wall-ceiling-paint"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_anti-reflex_white2_10L_695421b7-9f62-400b-96ef-2fda490608fc.png",
+            "title": "Ceiling Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "ceiling-paint"
+          }
+        },
+        "image_xaxrLr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_unica_akva_maali_0_9L_1.png",
+            "title": "Metal Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-metal-paint"
+          }
+        },
+        "image_njeyCU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_helmi30_0_9L_1_ae20af38-0d90-44a8-a2ee-86be45980469.png",
+            "title": "Wood Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wood-paint"
+          }
+        },
+        "image_XqgPWR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tikkurila_panssari_akva_0_9L_1.png",
+            "title": "UPVC Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "upvc-paint"
+          }
+        },
+        "image_WHQDkg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20l-waterbased-drum-default_7_8b2c6427-eb98-423f-bcdd-b92d7080df13.png",
+            "title": "Furniture Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-furniture-paint"
+          }
+        },
+        "image_trm7pg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3-web-BIKRIL-MATE.png",
+            "title": "Concrete Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-concrete-paint"
+          }
+        },
+        "image_RydY9d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8427043042293_LD-992x964.jpg",
+            "title": "Floor Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "floor-paint"
+          }
+        },
+        "image_WGAgXN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tikkurila_colorcard_Feel_the_Color_02.png",
+            "title": "Paint Samples & Tester Pots",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-paint-samples"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "image_DrXEUf",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_xaxrLr",
+        "image_njeyCU",
+        "image_XqgPWR",
+        "image_WHQDkg",
+        "image_trm7pg",
+        "image_RydY9d",
+        "image_WGAgXN"
+      ],
+      "settings": {
+        "title": "Interior Paint & Primers",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "22px",
+        "collection_results_per_row": "6",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

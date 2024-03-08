@@ -1,0 +1,151 @@
+{
+  "wrapper": "div.faqs-page",
+  "sections": {
+    "main": {
+      "type": "faq-page",
+      "blocks": {
+        "1ecf4d3c-1dfd-45d7-88d2-ec0a35229b03": {
+          "type": "text",
+          "settings": {
+            "question_faqs_1": "Will your template be fully compatible with Shopify?",
+            "answer_faqs_1": "Yes it is.",
+            "question_faqs_2": "I cannot upload the theme to my Shopify store \/ Shopify alerts that the file is too big to upload, what is the problem?",
+            "answer_faqs_2": "<p>Please make sure that you follow below steps:<\/p>\n\n<p>1\/ Download the package from themeforest.net (The file is in zip format)\n<br>\n<br>\n2\/ Extract the file you've just downloaded (Don't forget this step).\n<br>\n<br>\n3\/ Find this file: <strong>ella-x.x.x-sections-ready.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready.zip<\/strong> file to your Shopify store.\n<br>\n<br>\n- If you would like to use Ella RTL version. Please find this file: <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x RTL<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> file to your Shopify store\n<br>\n<br>\n- If you want to install <strong>child theme<\/strong>, please go to the corresponding theme folder\n<\/p>",
+            "question_faqs_3": "What I have to do when I need your support?",
+            "answer_faqs_3": "<p>To save your time and reach our support quickly, please follow below steps:\n<\/p><p>1\/ Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><\/p>\n<p>2\/ Capture screenshot or video for the issue you get.<\/p>\n<p>3\/ Specify which template and version you are using.<\/p>\n<p>4\/ Describe clearly how to reproduce the issue.<\/p>\n<p>5\/ Send all information (staff account, screenshot, video, template name and version, description of the issues, link) to <a href=\"mailto:email@domain.com\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">email@domain.com<\/a><\/p>\n<p><\/p>",
+            "question_faqs_4": "I purchased Ella theme but cannot find the Skin layout?",
+            "answer_faqs_4": "<p>Please help us to follow this instruction to import Skin\/ Homepage layout you want: <a href=\"http:\/\/themes.halothemes.com\/marketplace\/shopify-ella-documentation\/Read_me.html#!\/settings_data\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">http:\/\/themes.halothemes.com\/marketplace\/shopify-ella-documentation\/Read_me.html#!\/settings_data<\/a><\/p>",
+            "question_faqs_5": "Do you guys offer customisation services for your themes?",
+            "answer_faqs_5": "Yes, we do. Please send your customisation requests to email@domain.com, we will give you our quote. Thank you."
+          }
+        },
+        "44484dfc-4fe0-49ce-8ce4-8249083fb097": {
+          "type": "text",
+          "settings": {
+            "question_faqs_1": "Does the theme support image resizing and cropping?",
+            "answer_faqs_1": "Yes. Normally, the theme will resize images to a default size (based on your width\/height ratio setting). We also have Crop setting if you don’t want to scale the image.",
+            "question_faqs_2": "Can I add borders around our product images?",
+            "answer_faqs_2": "Yes, you can. You can also set image border colours.",
+            "question_faqs_3": "Can I have multi level menu?",
+            "answer_faqs_3": "Yes, you can. Just simply follow the instructions in our Manual Guide, you will be able to easily create a multi-level menu.",
+            "question_faqs_4": "Do you guys provide customer support during weekends \/ holidays?",
+            "answer_faqs_4": "Normally we don't provide support during weekends, except for urgent cases. In these cases, you only need to mark “Urgent” in your email, we will get back to you ASAP.",
+            "question_faqs_5": "Does the theme support Variant Image?",
+            "answer_faqs_5": "Yes, it does. Please check it out here to see how it works: <a href=\"https:\/\/new-ella.myshopify.com\/products\/dinterdum-pretium-condimento?variant=16867481452642\">https:\/\/new-ella.myshopify.com\/products\/dinterdum-pretium-condimento?variant=16867481452642<\/a>"
+          }
+        },
+        "f81bf414-6295-400b-984a-35e56a9923e9": {
+          "type": "text",
+          "settings": {
+            "question_faqs_1": "Can I turn on\/off Item Animation \/ Effect if item on theme?",
+            "answer_faqs_1": "Yes, we do. Please send your customisation requests to email@domain.com, we will give you our quote. Thank you.",
+            "question_faqs_2": "Can I turn on\/off Item Animation \/ Effect if item on theme?",
+            "answer_faqs_2": "<p>Please make sure that you follow below steps:<\/p>\n\n<p>1\/ Download the package from themeforest.net (The file is in zip format)\n<br>\n<br>\n2\/ Extract the file you've just downloaded (Don't forget this step).\n<br>\n<br>\n3\/ Find this file: <strong>ella-x.x.x-sections-ready.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready.zip<\/strong> file to your Shopify store.\n<br>\n<br>\n- If you would like to use Ella RTL version. Please find this file: <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x RTL<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> file to your Shopify store\n<br>\n<br>\n- If you want to install <strong>child theme<\/strong>, please go to the corresponding theme folder\n<\/p>",
+            "question_faqs_3": "Can I turn on\/off some blocks on the page?",
+            "answer_faqs_3": "Yes. You can turn on\/off almost any blocks on the page (featured products, slideshow, banners, related products, recent products,...).",
+            "question_faqs_4": "I want to have the dropdown cart displayed automatically every time clients hover over it (instead of clicking on it). Is it possible?",
+            "answer_faqs_4": "Yes, we have a setting for you to switch between these two options: Display on Hover and Display on Click.",
+            "question_faqs_5": "What is included in the theme package?",
+            "answer_faqs_5": "The theme package includes Theme source, Photoshop design files and manual guide."
+          }
+        },
+        "383fe220-c5af-4539-ac0a-6fec317a0590": {
+          "type": "text",
+          "settings": {
+            "question_faqs_1": "I notice that the images used in the theme are all portrait. Will that be a problem if I use square images for our products? How will they be displayed in the theme?",
+            "answer_faqs_1": "That is not a problem. You just need to modify the width\/height ratio in theme settings.",
+            "question_faqs_2": "",
+            "answer_faqs_2": "",
+            "question_faqs_3": "",
+            "answer_faqs_3": "",
+            "question_faqs_4": "",
+            "answer_faqs_4": "",
+            "question_faqs_5": "",
+            "answer_faqs_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ecf4d3c-1dfd-45d7-88d2-ec0a35229b03",
+        "44484dfc-4fe0-49ce-8ce4-8249083fb097",
+        "f81bf414-6295-400b-984a-35e56a9923e9",
+        "383fe220-c5af-4539-ac0a-6fec317a0590"
+      ],
+      "settings": {
+        "des_faqs": "Below FAQ are some common concerns of our clients before purchasing the theme, if you have other questions, please just send it to <a href=\"mailto:email@domain.com\" target=\"_blank\">email@domain.com<\/a>",
+        "contact_text": "Unable to find satisfactory answers ?",
+        "contact_link_text": "Contact Support",
+        "contact_link": "",
+        "icon_faqs": "Question",
+        "bg_icon_qs": "#ef6454",
+        "color_icon_qs": "#ffffff",
+        "bg_question": "#fafafa",
+        "color_question": "#323232",
+        "font_size_qs": "16",
+        "bg_question_acitve": "#232323",
+        "color_question_acitve": "#ffffff",
+        "icon_answer": "Answer",
+        "bg_icon_answer": "#69c69c",
+        "color_icon_answer": "#ffffff",
+        "color_question_answer": "#3c3c3c",
+        "font_size_answer": "16",
+        "color_question_link": "#0688e2",
+        "icon_show": "Show",
+        "icon_hide": "Hide"
+      }
+    },
+    "1627964096e7d243b7": {
+      "type": "home-featured-products",
+      "settings": {
+        "bg_color": "",
+        "layout_style": "layout_style_1",
+        "display_banner": false,
+        "banner_is": "left",
+        "banner_heading": "#CAMPAIGNS",
+        "font_size_banner_heading": "40px",
+        "color_banner_heading": "#ffffff",
+        "banner_sub_heading": "Spring Summer’08",
+        "font_size_banner_sub_heading": "13px",
+        "color_banner_sub_heading": "#ffffff",
+        "banner_des": "Phasellus lorem malesuada ligula pulvinar de cosmopolis",
+        "font_size_banner_des": "12px",
+        "color_banner_des": "#ffffff",
+        "banner_button": "Shop Now",
+        "link": "",
+        "banner_button_2": "Shop Now",
+        "link_2": "",
+        "bg_banner_button": "#ffffff",
+        "border_banner_button": "#ffffff",
+        "color_banner_button": "#232323",
+        "bg_color_box_style_2": "#ffffff",
+        "border_color_box_style_2": "#bcbcbc",
+        "featured_products_title": "Trending Now",
+        "color_text_title": "",
+        "font_size_title": "",
+        "text_alignment": "left",
+        "featured_products_des": "",
+        "featured_products_text_link": "",
+        "featured_products_link": "",
+        "color_text_link": "#ba7a2d",
+        "title_style": "style_1",
+        "show_slider_featured_collection": "collection-1",
+        "slider_featured_limit_all": 10,
+        "collection_results_per_row1": "5",
+        "featured_products_title_2": "Trending Now",
+        "featured_products_text_link_2": "",
+        "featured_products_link_2": "",
+        "show_slider_featured_collection_2": "",
+        "display_list_collection": false,
+        "text_list": "View all categories",
+        "url_list": "",
+        "margin_bottom_mb": 40,
+        "margin_bottom_tab": 40,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1627964096e7d243b7"
+  ]
+}

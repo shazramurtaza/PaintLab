@@ -1,0 +1,51 @@
+<div id="currency-modal-container">
+  <div class="modal-background">
+    <div class="modal">
+      <div id="close-currency-selector">X</div>
+      <div class="modal-content-border">
+      <h2>Select your country</h2>
+
+        
+        {% form 'localization' %}
+          <ul>
+          {% for country in localization.available_countries %}
+          {% assign lookup_item = country %}
+
+          {% case country %}
+            {% when 'United Kingdom' %}
+            {% assign name = 'Northern Ireland (UK)' %}
+            {% else %}
+            {% assign name = country %}
+          {% endcase %}
+            <li class="country-list-item" {{ country }}>
+              <input type="radio" id="{{country.iso_code}}" name="country_code" value="{{country.iso_code}}"{% if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+              <label class="country-group" for="{{country.iso_code}}">
+                <div class="country-flag" style="background-image: url({% render 'flag-selector', lookup_item: lookup_item %});">
+                </div>
+                <div class="country-text"> <!--change this text-->
+                  <span>{{ name }}<br>{{country.currency.iso_code}} {{country.currency.symbol}}</span>
+                </div>
+              </label>
+            </li>
+          {% endfor %}
+          </ul>
+      {% endform %}
+        
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+document.querySelector('#currency-modal-container').addEventListener('click', function (event) {
+  console.log('clicked');
+  document.querySelector('#currency-modal-container').classList.add("out");
+  document.querySelector('body').classList.remove("modal-active");
+}, false);  
+
+document.querySelector('#close-currency-selector').addEventListener('click', function (event) {
+  console.log('close');
+  document.querySelector('#currency-modal-container').classList.add("out");
+  document.querySelector('body').classList.remove("modal-active");
+}, false);
+</script>

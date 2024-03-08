@@ -1,0 +1,29 @@
+<div class="page-tpl">
+  <div class="container">
+    {% render 'breadcrumb' %}
+    {% if section.settings.show_heading %}
+    <header class="page-header">
+      <h2>
+        {% render 'multilang' with page.title %}
+      </h2>      
+    </header>
+      {% endif %}
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+   {
+        "name": "Main Page",
+        "settings": [
+          {
+            "type":"checkbox",
+            "id":"show_heading",
+            "label":"Show Heading",
+            "default":true
+          }
+        ]
+   }
+{% endschema %}

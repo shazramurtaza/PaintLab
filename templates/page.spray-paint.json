@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": true
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/zinsser_covers_up_ceiling_paint.png",
+            "title": "Spray Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-paint"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zinsser_bin_aersol-750x750_7a76b3d9-ce98-4ac3-92a2-ca3625f43d20.png",
+            "title": "Spray Primer",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-primer"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_6228bb4788405_e233a76d-4d46-482b-b15b-3ce33e58aea6.png",
+            "title": "Spray Varnish",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-varnish"
+          }
+        },
+        "image_LLiYM3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_60636ac35b1ff_4b98ed58-efd4-4ae6-854d-613989cac69b.png",
+            "title": "Spray Heat Resistant Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-heat-resistant-paint"
+          }
+        },
+        "image_3Hh9eD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_606c7e8fcb6e1_27a8f2d7-7677-4aca-bffb-6f312f224279.png",
+            "title": "Spray Blackboard Paint",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "spray-blackboard-paint"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_LLiYM3",
+        "image_3Hh9eD"
+      ],
+      "settings": {
+        "title": "Spray Paint & Primers",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "22px",
+        "collection_results_per_row": "6",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

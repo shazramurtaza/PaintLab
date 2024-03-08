@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "main": {
+      "type": "contact-template",
+      "settings": {
+        "display_google_map": true,
+        "google_map_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d9563.708301825649!2d-6.5232472!3d53.183288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7694a309a1c453e0!2sPAINT%20LAB!5e0!3m2!1sen!2s!4v1656603025100!5m2!1sen!2s\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "contact_title": "",
+        "contact_text_desc": "",
+        "contact_your_name": "",
+        "contact_phone_number": "",
+        "contact_your_email": "",
+        "display_location": false,
+        "location_code": ""
+      }
+    },
+    "1625993582ada3849a": {
+      "type": "home-custom-block-spotlight",
+      "blocks": {
+        "1625993582ada3849a-0": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        },
+        "1625993582ada3849a-1": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        },
+        "1625993582ada3849a-2": {
+          "type": "image",
+          "settings": {
+            "bg_color_column": "",
+            "title": "Lorem De Dorus",
+            "des": "Nullam aliquet vestibulum augue non varius. Cras cosmo congue an melitos. Duis tristique del ante le maliquam. Praesent murna de tellus laoreet cosmopolis.",
+            "button": "Shop Now",
+            "link": "",
+            "color_button": ""
+          }
+        }
+      },
+      "block_order": [
+        "1625993582ada3849a-0",
+        "1625993582ada3849a-1",
+        "1625993582ada3849a-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "layout_style": "layout_style_1",
+        "margin_bottom_mb": 25,
+        "margin_bottom_tab": 35,
+        "margin_bottom": 35,
+        "spotlight_block_title": "#Featured On Ella",
+        "spotlight_block_des": "",
+        "title_style": "style_1"
+      }
+    },
+    "1656602292edd4b638": {
+      "type": "home-about-us",
+      "settings": {
+        "style_about": "style_1",
+        "display_border_top": true,
+        "bg_color": "rgba(0,0,0,0)",
+        "border_bg_color": "#f5f5f5",
+        "bg_color_item_style_3": "#ffffff",
+        "style_title": "style_1",
+        "title": "",
+        "color_title": "#232323",
+        "font_size_title": "26px",
+        "font_size_title_mb": "20px",
+        "font_weight_title": "600",
+        "text_transform_title": "uppercase",
+        "title_sub": "",
+        "font_size_title_sub": "18px",
+        "color_title_sub": "",
+        "des": "<p><a href=\"https:\/\/www.google.com\/maps\/place\/paintlab.ie\/@53.3153438,-6.3460401,17z\/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu\" title=\"https:\/\/www.google.com\/maps\/place\/paintlab.ie\/@53.3153438,-6.3460401,17z\/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu\"> Unit D1, Ballymount Dr,<br\/> Ballymount Industrial Estate,<br\/> Dublin, D12 CY99, Ireland<\/a><\/p>",
+        "color_des": "#787878",
+        "font_size_des": "16px",
+        "button_text": "",
+        "button_text_link": "",
+        "color_button": "#202020",
+        "color_border_button": "#ffffff",
+        "bg_color_button": "#ffffff",
+        "font_size_title_item": "",
+        "font_size_desc_item": "",
+        "font_size_button_item": "",
+        "margin_bottom": 30,
+        "margin_bottom_mb": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1625993582ada3849a",
+    "1656602292edd4b638"
+  ]
+}

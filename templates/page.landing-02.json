@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "163705923087f69439": {
+      "type": "home-custom-block-baner",
+      "settings": {
+        "layout": "full",
+        "layout_style": "layout_style_1",
+        "display_bg_banner": false,
+        "bg_color_banner": "#f5f5f5",
+        "widget_title": "",
+        "widget_des": "",
+        "title_style": "style_1",
+        "img_align": "center",
+        "margin_bottom_mb": 25,
+        "margin_bottom_tab": 30,
+        "margin_bottom": 30
+      }
+    },
+    "1656666005d96a39fc": {
+      "type": "home-collections",
+      "blocks": {
+        "16566660059ad94548-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0RR6430090_newPKG-500x500-1.jpg",
+            "title": "9\" - 18\" Roller Sleeves",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "9-18-roller-sleeves"
+          }
+        },
+        "16566660059ad94548-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VMG02852-scaled-500x500.jpg",
+            "title": "Jumbo Roller Sleeves",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "jumbo-roller-sleeves"
+          }
+        },
+        "16566660059ad94548-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roller-sleevs-mini.jpg",
+            "title": "Mini Roller Sleeves",
+            "color_title": "#000000",
+            "btn_shop_now": "Shop Now",
+            "link": "mini-roller-sleeves"
+          }
+        }
+      },
+      "block_order": [
+        "16566660059ad94548-0",
+        "16566660059ad94548-1",
+        "16566660059ad94548-2"
+      ],
+      "settings": {
+        "title": "Roller Sleeves",
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "bg_color": "#fff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163705923087f69439",
+    "1656666005d96a39fc"
+  ]
+}

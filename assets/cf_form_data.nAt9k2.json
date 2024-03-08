@@ -1,0 +1,405 @@
+{
+  "form": {
+    "id": "nAt9k2",
+    "name": "Retail Registration",
+    "handle": "retail-registration-3",
+    "theme_id": "136106377428",
+    "settings": {
+      "locales": {
+        "back": "Back",
+        "next": "Next",
+        "cancel": "Cancel",
+        "edit_link": "Edit account",
+        "fix_errors": "Please fix errors before continuing",
+        "is_invalid": "{{label}} is invalid",
+        "email_taken": "Email has already been taken",
+        "phone_taken": "Phone number has already been taken",
+        "server_error": "Could not save form, please try again later",
+        "step_counter": "Step {{current}} of {{total}}",
+        "verify_email": "Check your email for a verification link to activate your account.",
+        "not_available": "An error occurred while saving your account, please try again in a few minutes.",
+        "create_account": "Create account",
+        "update_account": "Update account",
+        "recaptcha_error": "Challenge verification failed, please try again",
+        "creating_account": "Creating account...",
+        "updating_account": "Updating account...",
+        "too_many_requests": "We are experiencing high traffic, please try again later.",
+        "reset_password_link": "Reset your password",
+        "invalid_email_domain": "Email contains an invalid domain name",
+        "reset_password_email_sent": "Check your inbox for a link to reset your password.",
+        "reset_password_too_many_attempts": "You tried to reset your password too many times. Please wait and try again later."
+      },
+      "customCSS": ".cf-form-inner {\n  max-width: 750px;\n  margin: auto;\n}\n",
+      "whitelistedTags": "",
+      "showPasswordReset": true,
+      "markRequiredFields": true,
+      "displayCancelButton": true,
+      "goBackAfterSubmission": false,
+      "accountApprovalRequired": false,
+      "cancelButtonRedirectUrl": "\/account\/login",
+      "emailVerificationRequired": true,
+      "postSubmissionRedirectUrl": "\/account",
+      "goBackAfterCancelButtonClick": false
+    },
+    "install_locations": [
+      "register"
+    ],
+    "created_at": "2022-11-02T15:14:30Z",
+    "updated_at": "2022-11-02T17:10:39Z",
+    "revision_ids": [
+      "PnTlVmX",
+      "B5Tv6aZ",
+      "3qTZPz5"
+    ]
+  },
+  "revision": {
+    "id": "B5Tv6aZ",
+    "created_at": "2022-11-02T15:31:45Z",
+    "updated_at": "2022-11-02T17:10:39Z",
+    "embed_version": "4.11.4",
+    "published_at": "2022-11-02T17:10:39Z",
+    "fields": [
+      {
+        "id": 128854,
+        "dataColumn": {
+          "key": "first_name",
+          "label": "First name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 0,
+        "type": "text",
+        "stepId": 197854,
+        "default": "",
+        "label": "First name",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "first_name",
+        "autotag": null
+      },
+      {
+        "id": 408115,
+        "dataColumn": {
+          "key": "last_name",
+          "label": "Last name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 1,
+        "type": "text",
+        "stepId": 197854,
+        "default": "",
+        "label": "Last name",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "last_name",
+        "autotag": null
+      },
+      {
+        "id": 127933,
+        "dataColumn": {
+          "key": "email",
+          "label": "Email address",
+          "dataType": "email"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "email",
+        "stepId": 197854,
+        "default": "",
+        "label": "Email address",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "operator": "is_valid_email",
+            "comparand": null,
+            "errorMessage": "Please provide a valid email address"
+          },
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "email_address",
+        "autotag": null
+      },
+      {
+        "id": 116322,
+        "dataColumn": {
+          "key": "accepts_marketing",
+          "label": "Accepts marketing",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 3,
+        "type": "checkbox",
+        "stepId": 197854,
+        "default": "",
+        "label": "Subscribe to our newsletter",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": "accepts_marketing",
+        "autotag": null
+      },
+      {
+        "id": 179097,
+        "dataColumn": {
+          "key": "birthday",
+          "label": "Birthday",
+          "dataType": "date"
+        },
+        "parentId": null,
+        "position": 0,
+        "type": "date",
+        "stepId": 304889,
+        "default": "",
+        "label": "Birthday",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "dateInput": "select",
+          "yearsBack": 100,
+          "dateFormat": "MM-DD-YYYY",
+          "yearsForward": 0
+        },
+        "validations": [
+          {
+            "metadata": {
+              "unit": "year",
+              "tense": "past",
+              "value": 13
+            },
+            "operator": "more_than",
+            "comparand": null,
+            "errorMessage": "You must be at least 13 years old to register"
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 106133,
+        "dataColumn": {
+          "key": "gender",
+          "label": "Gender",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 1,
+        "type": "radio",
+        "stepId": 304889,
+        "default": "",
+        "label": "Gender",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+          {
+            "label": "Male",
+            "value": "Male"
+          },
+          {
+            "label": "Female",
+            "value": "Female"
+          },
+          {
+            "label": "Other \/ prefer not to say",
+            "value": "Other \/ prefer not to say"
+          }
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "end": 10,
+          "start": 1,
+          "enumType": "list",
+          "direction": "row",
+          "separateValues": false
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 117069,
+        "dataColumn": {
+          "key": "referred_by",
+          "label": "Referred by",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "radio",
+        "stepId": 304889,
+        "default": "",
+        "label": "Referred by",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+          {
+            "label": "Google search",
+            "value": "google"
+          },
+          {
+            "label": "Facebook ad",
+            "value": "facebook"
+          },
+          {
+            "label": "Youtube ad",
+            "value": "youtube"
+          },
+          {
+            "label": "Someone told me",
+            "value": "person"
+          },
+          {
+            "label": "Other...",
+            "value": "other"
+          }
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "enumType": "list",
+          "direction": "column",
+          "separateValues": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      }
+    ],
+    "steps": [
+      {
+        "id": 304889,
+        "title": "Tell us about yourself",
+        "description": ""
+      },
+      {
+        "id": 197854,
+        "title": "Create your account",
+        "description": ""
+      }
+    ],
+    "rules": [
+      {
+        "id": 164161,
+        "title": "Collect referral information",
+        "actions": [
+          {
+            "id": 983162,
+            "effect": "show_field",
+            "metadata": {
+              "fieldId": 319684
+            }
+          }
+        ],
+        "conditions": [
+          {
+            "operand": null,
+            "metadata": {
+              "column": {
+                "key": "referred_by",
+                "label": "Referred by",
+                "dataType": "text"
+              },
+              "comparand": "person"
+            },
+            "operator": "equals"
+          },
+          {
+            "operand": null,
+            "metadata": {
+              "column": {
+                "key": "referred_by",
+                "label": "Referred by",
+                "dataType": "text"
+              },
+              "comparand": "other"
+            },
+            "operator": "equals"
+          }
+        ],
+        "conditionChaining": "any"
+      }
+    ]
+  }
+}

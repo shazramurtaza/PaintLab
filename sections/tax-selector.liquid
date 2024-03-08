@@ -1,0 +1,972 @@
+<style>
+  .vat-switcher-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: {{ section.settings.popup_over }};
+    z-index: 10000;
+  }
+
+  .vat-switcher-popup-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: {{ section.settings.popup_background }};
+    margin: auto;
+    padding: 1rem;
+    max-width: 90%;
+    max-height: 260px;
+    width: 560px;
+    height: 260px;
+    box-shadow: 1px 1px rgba(188, 188, 188, .5);
+    z-index: 9999;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .vat-switcher-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vat-switcher-info h2 {
+    font-size: {{ section.settings.heading_size }}px;
+    color: {{ section.settings.heading_color }};
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+
+  .vat-switcher-info p {
+    font-size: {{ section.settings.sub_heading_size }}px;
+    color: {{ section.settings.sub_heading_color }};
+    margin: 0 auto 1.5rem;
+  }
+
+  .vat-switcher-account-types {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vat-switcher-account {
+    cursor: pointer;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .vat-switcher-account button {
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    {% if section.settings.label_background_color != blank %} background: {{ section.settings.label_background_color }}; {% endif %}
+    {% if section.settings.label_color != blank %}color: {{ section.settings.label_color }}; {% endif %}
+    font-size: {{ section.settings.label_size }}
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-family: inherit;
+  }
+  
+  .vat-switcher-account button:hover {
+    {% if section.settings.label_background_color_hover != blank %}background: {{ section.settings.label_background_color_hover }}; {% endif %}
+    {% if section.settings.label_color_hover != blank %}color: {{ section.settings.label_color_hover }}; {% endif %}
+  }
+
+  .vat-switcher-account p {
+    margin: 0 auto;
+    font-size: {{ section.settings.helper_size }}px;
+    color: {{ section.settings.helper_color }};    
+  }
+
+  .vat-switcher-popup-container .close-btn {
+    border-radius: 50%;
+    background: #ffffff;
+    color: #dedede;
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .vat-switcher-floating {
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  {% if section.settings.display_floating == 'none' %}
+  .vat-switcher-floating {
+    display: none;
+  }
+  {% elsif section.settings.display_floating == 'mobile'%}
+  {% assign mobilePostion = section.settings.widget_mobile | split: "-" %}
+  .vat-switcher-floating {
+    display: none;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .vat-switcher-floating {
+      display: flex;
+      position: fixed;
+      {{ mobilePostion[0] }} : {% if section.settings.custom_postion_mobile %}{{ section.settings.vertical_mobile }}px {% else %}0px{% endif %};
+      {{ mobilePostion[1] }} : {% if section.settings.custom_postion_mobile %}{{ section.settings.horizontal_mobile }}px {% else %}0px{% endif %};
+      {% if mobilePostion[0] == 'top' %}flex-direction: column-reverse;{% endif %}
+    }
+   	
+    [tooltip]:before {
+      font-weight: 600;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      background-color: #585858;
+      color: #fff;
+      content: attr(tooltip);
+      font-size: 12px;
+      visibility: hidden;
+      opacity: 0;
+      padding: 5px 7px;
+      margin-{{ mobilePostion[1] }}: 10px;
+      position: absolute;
+      {{ mobilePostion[1] }}: 100%;
+      bottom: 5%;
+      white-space: nowrap;
+    } 
+  }
+  
+  {% elsif section.settings.display_floating == 'desktop'%}
+  {% assign desktopPosition = section.settings.widget_desktop | split: "-" %}
+  
+  .vat-switcher-floating {
+    position: fixed;
+    {{ desktopPosition[0] }} : {% if section.settings.custom_postion_desktop %}{{ section.settings.vertical_desktop }}px {% else %}0px{% endif %};
+    {{ desktopPosition[1] }} : {% if section.settings.custom_postion_desktop %}{{ section.settings.horizontal_desktop }}px {% else %}0px{% endif %};
+    {% if desktopPosition[0] == 'top' %}
+    flex-direction: column-reverse;
+    {% endif %}
+  }
+  
+  [tooltip]:before {
+    font-weight: 600;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #585858;
+    color: #fff;
+    content: attr(tooltip);
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px 7px;
+    margin-{{ desktopPosition[1] }}: 10px;
+    position: absolute;
+    {{ desktopPosition[1] }}: 100%;
+    bottom: 5%;
+    white-space: nowrap;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .vat-switcher-floating {
+      display: none;
+    }
+  }
+  
+  {% elsif section.settings.display_floating == 'both'%}
+  {% assign desktopPosition = section.settings.widget_desktop | split: "-" %}
+  {% assign mobilePostion = section.settings.widget_mobile | split: "-" %}
+  .vat-switcher-floating {
+    position: fixed;
+    {{ desktopPosition[0] }} : {% if section.settings.custom_postion_desktop %}{{ section.settings.vertical_desktop }}px {% else %}0px{% endif %};
+    {{ desktopPosition[1] }} : {% if section.settings.custom_postion_desktop %}{{ section.settings.horizontal_desktop }}px {% else %}0px{% endif %};
+    {% if desktopPosition[0] == 'top' %}
+    flex-direction: column-reverse;
+    {% else %}
+    flex-direction: column;
+    {% endif %}
+    {% if desktopPosition[0] == 'top' %}bottom{% else %}top{% endif %}: unset;
+    {% if desktopPosition[1] == 'left' %}right{% else %}left{% endif %}: unset;
+  }
+  
+  [tooltip]:before {
+    font-weight: 600;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #585858;
+    color: #fff;
+    content: attr(tooltip);
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px 7px;
+    position: absolute;
+    margin-{{ desktopPosition[1] }}: 10px;
+    {{ desktopPosition[1] }}: 100%;
+    {% unless desktopPosition[1] == mobilePostion[1] %}
+    {{ mobilePostion[1] }}: unset;
+    margin-{{mobilePostion[1]}}: unset;
+    {% endunless %}
+    bottom: 5%;
+    white-space: nowrap;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .vat-switcher-floating {
+      position: fixed;
+      {{ mobilePostion[0] }} : {% if section.settings.custom_postion_mobile %}{{ section.settings.vertical_mobile }}px {% else %}0px{% endif %};
+      {{ mobilePostion[1] }}: {% if section.settings.custom_postion_mobile %}{{ section.settings.horizontal_mobile }}px {% else %}0px{% endif %};
+      {% if mobilePostion[0] == 'top' %}
+      flex-direction: column-reverse;
+      {% else %}
+      flex-direction: column;
+      {% endif %}
+      {% if mobilePostion[0] == 'top' %}bottom{% else %}top{% endif %}: unset;
+      {% if mobilePostion[1] == 'left' %}right{% else %}left{% endif %}: unset;
+    }
+    [tooltip]:before {
+      font-weight: 600;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      background-color: #585858;
+      color: #fff;
+      content: attr(tooltip);
+      font-size: 12px;
+      visibility: hidden;
+      opacity: 0;
+      padding: 5px 7px;
+      position: absolute;
+      margin-{{ mobilePostion[1] }}: 10px;
+      {{ mobilePostion[1] }}: 100%;
+      {% unless desktopPosition[1] == mobilePostion[1] %}
+      {{ desktopPosition[1] }}: unset;
+      margin-{{ desktopPosition[1] }}: unset;
+      {% endunless %}
+      bottom: 5%;
+      white-space: nowrap;
+    }
+  }
+  
+  {% endif %}
+  
+  .floating-button {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin: 20px auto 0;
+    box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .floating-button:active,
+  .floating-button:focus,
+  .floating-button:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  }
+
+  .floating-button:not(:last-child) {
+    width: 36px;
+    height: 36px;
+    margin: 20px auto 0;
+    opacity: 0;
+  }
+
+  .floating-button:not(:last-child)>i {
+    font-size: 18px;
+    line-height: 40px;
+    transition: all .3s ease-in-out;
+  }
+
+  .vat-switcher-floating:hover .floating-button:not(:last-child) {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+  }
+
+  .floating-button:nth-last-child(1) {
+    -webkit-transition-delay: 25ms;
+    transition-delay: 25ms;
+  }
+
+  .floating-button:not(:last-child):nth-last-child(2) {
+    -webkit-transition-delay: 20ms;
+    transition-delay: 20ms;
+  }
+
+  .floating-button:not(:last-child):nth-last-child(3) {
+    -webkit-transition-delay: 40ms;
+    transition-delay: 40ms;
+  }
+
+  .floating-button:not(:last-child):nth-last-child(4) {
+    -webkit-transition-delay: 60ms;
+    transition-delay: 60ms;
+  }
+
+  .floating-button:not(:last-child):nth-last-child(5) {
+    -webkit-transition-delay: 80ms;
+    transition-delay: 80ms;
+  }
+
+  [tooltip]:hover:before,
+  [tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .svg-size {
+    max-height: 85%;
+    max-width: 85%;
+  }
+
+  .account-type .svg-size {
+    max-height: 75%;
+    max-width: 75%;
+  }
+  
+  .color-switcher {
+    background-color: {{ section.settings.floating_bg }};
+  }
+
+  .color-business {
+    background-color: {{ section.settings.b2b_bg }};
+  }
+
+  .color-personal {
+    background-color: {{ section.settings.b2c_bg }};
+  }
+  
+  .color-country {
+    background-color: #8c8c8c;
+  }
+  
+  .color-country .svg-size {
+    height: 4rem;
+    width: 2rem;
+  }
+  
+  /* Inline Switcher  */
+  .vat-switcher-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vat-switcher-inline a {
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .vat-switcher-inline h2 {
+    margin: 0 auto;
+    font-size: {{ section.settings.inline_label_size}}px;
+    font-weight: bold;
+    text-align: center;
+    color: {{ section.settings.inline_label_color }};
+  }
+  
+  .vat-switcher-inline p {
+    margin: 0;
+    font-size: {{ section.settings.inline_helper_size }}px;
+    text-align: center;
+    color: {{ section.settings.inline_helper_color }};
+  }
+  
+  .vat-switcher-inline a.active h2 {
+    color: {{ section.settings.inline_label_color_active}};
+  }
+  
+  .vat-switcher-inline a.active p {
+    color: {{ section.settings.inline_helper_color_active}};
+  }
+  
+  .hidden-selector {
+    display: none;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .visible-desktop {
+      display: none;
+    }
+    .visible-mobile {
+      display: flex;
+    }
+    .vat-switcher-inline h2 {
+      font-size: {{ section.settings.inline_label_size_mobile}}px;
+      color: {{ section.settings.inline_label_color_mobile }};
+    }
+    
+    .vat-switcher-inline p {
+      font-size: {{ section.settings.inline_helper_size_mobile }}px;
+      color: {{ section.settings.inline_helper_color_mobile }};
+    }
+    
+    .vat-switcher-inline a.active h2 {
+      color: {{ section.settings.inline_label_color_active_mobile }};
+    }
+    
+    .vat-switcher-inline a.active p {
+      color: {{ section.settings.inline_helper_color_active_mobile }};
+    }
+  }
+  
+  @media screen and (min-width: 749px) {
+    .visible-mobile {
+      display: none;
+    }
+    .visible-desktop {
+      display: flex;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+  window.vatSwitcher = window.vatSwitcher || {};
+  window.vatSwitcher = {
+    "status" : {{ section.settings.enable_app }},
+    "displayPopup" : {{ section.settings.display_popup }},
+    "includingTax" : {{ section.settings.taxes_included }},
+    "defaultLocale" : Shopify.locale,
+    "defaultCountry" : Shopify.country,
+    "displayCountrySelector" : "{{ section.settings.display_country_selector }}",
+    "defaultPricing" : "{{ section.settings.default_option }}",
+    "priceSelector" : "{{ section.settings.price_selector }}",
+    "translations" : {{ shop.metafields.vatswitcher.translations }},
+    "taxConfig" : {{ shop.metafields.vatswitcher.taxconfig }},
+    "cookie_validity" : {{ section.settings.cookie_validity }}
+  }
+  {% if template contains 'collection' %}
+  window.vatSwitcher.currentCollection = {{ collection | json }};
+  {% elsif template contains 'product' %}
+  window.vatSwitcher.currentProduct = {{ product.collections | map: 'id' | json }};
+  {% endif %}
+</script>
+
+<div class="vat-switcher-popup {% if section.settings.display_popup != true %}hidden-popup{% endif %}">
+  <div class="vat-switcher-popup-container">
+    <div class="close-btn">
+      <svg fill="none" stroke="#dedede" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+    </div>
+    <div class="vat-switcher-info">
+      <h2>Welcome to Shopify Store</h2>
+      <p>I act like:</p>
+    </div>
+    <div class="vat-switcher-account-types">
+      <div class="vat-switcher-account company">
+        <button class="btn account-type" type="button" data-vat-type="b2b">Business</button>
+        <p class="description">excl. VAT</p>
+      </div>
+      <div class="vat-switcher-account private">
+        <button class="btn account-type" type="button" data-vat-type="b2c">Individual</button>
+        <p class="description">incl. VAT</p>
+      </div>
+    </div>
+    <div class="country-selector {% if section.settings.display_country_selector == false %} hidden-selector{% endif %}">
+      <div id="vat-country-selector">
+        Select Country: <select class="country-selector-select" name="country_selection"></select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="vat-switcher-floating">
+  <a href="javascript:;" class="floating-button color-country {% if section.settings.display_country_selector == false %} hidden-selector{% endif %}" tooltip="Change Country">
+    <svg class="svg-size" fill="none" stroke-width="2" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
+  </a>
+  <a href="javascript:;" class="account-type floating-button color-personal" data-vat-type="b2c"
+     tooltip="Individual (Including VAT)">
+    {% if section.settings.b2c_icon == null %}
+    <svg class="svg-size" fill="none" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+    </svg>
+    {% else %}
+    <img loading="lazy" height="24" width="24" src="{{ section.settings.b2c_icon | img_url: '24x24' }}">
+    {% endif %}
+  </a>
+  <a href="javascript:;" class="account-type floating-button color-business" data-vat-type="b2b"
+     tooltip="Business (Excluding VAT)">
+    {% if section.settings.b2b_icon == null %}
+    <svg class="svg-size" fill="none" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+      </path>
+    </svg>
+    {% else %}
+    <img loading="lazy" height="24" width="24" src="{{ section.settings.b2b_icon | img_url: '24x24' }}">
+    {% endif %}
+  </a>
+  <a class="floating-button color-switcher" tooltip="I act as:">
+    {% if section.settings.floating_icon == null %}
+    <svg class="svg-size" fill="none" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+      </path>
+    </svg>
+    {% else %}
+    <img loading="lazy" height="24" width="24" src="{{ section.settings.floating_icon | img_url: '24x24' }}">
+    {% endif %}
+  </a>
+</div>
+
+<script defer src="{{ 'tax-selector.min.js' | asset_url }}"></script>
+
+{% schema %}
+{
+  "name": "T-Selector",
+  "settings": [
+    {
+      "type": "header",
+      "content": "App Configuration"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_app",
+      "label": "Enable App",
+      "default": false
+    },
+    {
+      "type": "radio",
+      "id": "default_option",
+      "label": "Default Selection",
+      "options": [
+        {
+          "value": "b2b",
+          "label": "B2B Pricing"
+        },
+        {
+          "value": "b2c",
+          "label": "B2C Pricing"
+        }
+      ],
+      "default": "b2c"
+    },
+    {
+      "type": "header",
+      "content": "Pop-up Configuration"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_popup",
+      "label": "Display Pop-up",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "popup_background",
+      "label": "Popup Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color_background",
+      "id": "popup_over",
+      "label": "Body Overlay Color",
+      "default": "linear-gradient(0deg, rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5) 100%)"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Font Size",
+      "default": 28
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "sub_heading_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Sub Heading Font Size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Sub Heading Color",
+      "default": "#8c8c8c"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Button Font Size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Button Text Color"
+    },
+    {
+      "type": "color",
+      "id": "label_background_color",
+      "label": "Button Background Color"
+    },
+    {
+      "type": "color",
+      "id": "label_color_hover",
+      "label": "Button Text Color (Hover)"
+    },
+    {
+      "type": "color",
+      "id": "label_background_color_hover",
+      "label": "Button Background Color (Hover)"
+    },
+    {
+      "type": "range",
+      "id": "helper_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Helper Font Size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "helper_color",
+      "label": "Helper Text Color",
+      "default": "#8C8C8C"
+    },
+    {
+      "type": "header",
+      "content": "Floating Widget"
+    },
+    {
+      "type": "radio",
+      "id": "display_floating",
+      "label": "Display Floating Widget",
+      "options": [
+        {
+          "value": "none",
+          "label": "No"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobile Only"
+        },
+        {
+          "value": "desktop",
+          "label": "Desktop Only"
+        },
+        {
+          "value": "both",
+          "label": "Mobile & Desktop"
+        }
+      ],
+      "default": "both"
+    },
+    {
+      "type": "image_picker",
+      "id": "floating_icon",
+      "label": "Floating Icon"
+    },
+    {
+      "type": "color",
+      "id": "floating_bg",
+      "label": "Floating Icon Background",
+      "default": "#e22120"
+    },
+    {
+      "type": "image_picker",
+      "id": "b2b_icon",
+      "label": "B2B Icon"
+    },
+    {
+      "type": "color",
+      "id": "b2b_bg",
+      "label": "B2B Icon Background",
+      "default": "#6bbc00"
+    },
+    {
+      "type": "image_picker",
+      "id": "b2c_icon",
+      "label": "B2C Icon"
+    },
+    {
+      "type": "color",
+      "id": "b2c_bg",
+      "label": "B2C Icon Background",
+      "default": "#1878b9"
+    },
+    {
+      "type": "radio",
+      "id": "widget_mobile",
+      "label": "Widget Position on Mobile",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top-Left"
+        },
+        {
+          "value": "top-right",
+          "label": "Top-Right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom-Left"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom-Right"
+        }
+      ],
+      "default": "bottom-right"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_postion_mobile",
+      "label": "Custom Padding - Mobile",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "vertical_mobile",
+      "label": "Vertical Padding",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "horizontal_mobile",
+      "label": "Horizontal Padding",
+      "default": 20
+    },
+    {
+      "type": "radio",
+      "id": "widget_desktop",
+      "label": "Widget Position on Desktop",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top-Left"
+        },
+        {
+          "value": "top-right",
+          "label": "Top-Right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom-Left"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom-Right"
+        }
+      ],
+      "default": "bottom-right"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_postion_desktop",
+      "label": "Custom Padding - desktop",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "vertical_desktop",
+      "label": "Vertical Padding",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "horizontal_desktop",
+      "label": "Horizontal Padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Inline Widget - Desktop"
+    },
+    {
+      "type": "range",
+      "id": "inline_label_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Label Font Size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "inline_label_color",
+      "label": "Label Color",
+      "default": "#8C8C8C"
+    },
+    {
+      "type": "range",
+      "id": "inline_helper_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Helper Font Size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "inline_helper_color",
+      "label": "Helper Text Color",
+      "default": "#8C8C8C"
+    },
+    {
+      "type": "color",
+      "id": "inline_label_color_active",
+      "label": "Label Color (Selected)",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "inline_helper_color_active",
+      "label": "Helper Color (Selected)",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Inline Widget - Mobile"
+    },
+    {
+      "type": "range",
+      "id": "inline_label_size_mobile",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Label Font Size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "inline_label_color_mobile",
+      "label": "Label Color",
+      "default": "#8C8C8C"
+    },
+    {
+      "type": "range",
+      "id": "inline_helper_size_mobile",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Helper Font Size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "inline_helper_color_mobile",
+      "label": "Helper Text Color",
+      "default": "#8C8C8C"
+    },
+    {
+      "type": "color",
+      "id": "inline_label_color_active_mobile",
+      "label": "Label Color (Selected)",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "inline_helper_color_active_mobile",
+      "label": "Helper Color (Selected)",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Configure Price Selector"
+    },
+    {
+      "type": "text",
+      "id": "price_selector",
+      "label": "Price Selector",
+      "default": "span.tax-selector-currency"
+    },
+    {
+      "type": "checkbox",
+      "id": "taxes_included",
+      "label": "Product Prices includes taxes",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "cookie_validity",
+      "min": 1,
+      "max": 365,
+      "step": 7,
+      "unit": "day",
+      "label": "Cookie Validity",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Display Country Selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_country_selector",
+      "label": "Display Country Selector",
+      "info" : "If you are using Shopify Markets, please disable Country Selector",
+      "default": false
+    }
+  ],
+  "presets" : [
+    {
+      "name": "T-Selector"
+    }
+  ]
+}
+{% endschema %}

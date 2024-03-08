@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "image_zrTLgb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tec7-caulk-320x480-1-removebg-preview.png",
+            "title": "Caulk & Sealants",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "caulk-sealants"
+          }
+        },
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/toupret_rtu_repair_1-5kg-fgrp1-5gb-removebg-preview.png",
+            "title": "Ready Mixed Fillers",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "ready-mixed-filler"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/toupret_quick_dry_filler_1kg-ttreb901gb-removebg-preview.png",
+            "title": "Powdered Fillers",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "powdered-filler"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/toupret_wood_repair_filler_1kg.png",
+            "title": "Wood Fillers",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "wood-fillers"
+          }
+        },
+        "image_YX8Qzk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/toupret_glazing_putty_1kg-ttmabla01gb.png",
+            "title": "Putty",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "putty"
+          }
+        },
+        "image_ia7Mbi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1148466-removebg_cc195abc-ad0e-4110-87e0-f7748772e10a.png",
+            "title": "Glues",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "glues"
+          }
+        }
+      },
+      "block_order": [
+        "image_zrTLgb",
+        "16566585979d603897-0",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_YX8Qzk",
+        "image_ia7Mbi"
+      ],
+      "settings": {
+        "title": "Fillers & Sealants",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "22px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

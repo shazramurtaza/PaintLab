@@ -1,0 +1,93 @@
+{
+  "wrapper": "div.brands-page",
+  "sections": {
+    "main": {
+      "type": "brands-page",
+      "settings": {
+        "display_brand": true,
+        "link_brand": "vendor"
+      }
+    },
+    "16259888694ade058e": {
+      "type": "home-custom-block-images",
+      "disabled": true,
+      "blocks": {
+        "16259888694ade058e-0": {
+          "type": "image",
+          "settings": {
+            "color_content": "#ffffff",
+            "heading_color_style_2": "#f7e3dc",
+            "sub_heading": "New Arrivals",
+            "font_size_sub_heading": "13px",
+            "heading": "Da Scarvéro",
+            "font_size_heading": "30px",
+            "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+            "font_size_des": "12px",
+            "button": "Shop Now",
+            "link": "",
+            "bg_button": "#ffffff",
+            "border_button": "#ffffff",
+            "color_button": "#232323"
+          }
+        },
+        "16259888694ade058e-1": {
+          "type": "image",
+          "settings": {
+            "color_content": "#ffffff",
+            "heading_color_style_2": "#f7e3dc",
+            "sub_heading": "New Arrivals",
+            "font_size_sub_heading": "13px",
+            "heading": "Da Scarvéro",
+            "font_size_heading": "30px",
+            "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+            "font_size_des": "12px",
+            "button": "Shop Now",
+            "link": "",
+            "bg_button": "#ffffff",
+            "border_button": "#ffffff",
+            "color_button": "#232323"
+          }
+        },
+        "16259888694ade058e-2": {
+          "type": "image",
+          "settings": {
+            "color_content": "#ffffff",
+            "heading_color_style_2": "#f7e3dc",
+            "sub_heading": "New Arrivals",
+            "font_size_sub_heading": "13px",
+            "heading": "Da Scarvéro",
+            "font_size_heading": "30px",
+            "des": "Phasellus lorem malesuada ligula pulvino commodo maecenas",
+            "font_size_des": "12px",
+            "button": "Shop Now",
+            "link": "",
+            "bg_button": "#ffffff",
+            "border_button": "#ffffff",
+            "color_button": "#232323"
+          }
+        }
+      },
+      "block_order": [
+        "16259888694ade058e-0",
+        "16259888694ade058e-1",
+        "16259888694ade058e-2"
+      ],
+      "settings": {
+        "layout": "default",
+        "layout_style": "layout_style_1",
+        "display_padding": true,
+        "bg_color": "#f8f8f8",
+        "widget_title": "",
+        "widget_des": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16259888694ade058e"
+  ]
+}

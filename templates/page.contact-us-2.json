@@ -1,0 +1,54 @@
+{
+  "wrapper": "div.page-tpl.about-us-2",
+  "sections": {
+    "header": {
+      "type": "page-header",
+      "disabled": true,
+      "settings": {
+        "text_color": "",
+        "menu": "main-menu",
+        "menu_bar_background": "",
+        "menu_bar_border": "",
+        "menu_item_background": "",
+        "menu_item_text_color": "",
+        "menu_item_background_color_h": "",
+        "menu_item_text_color_h": ""
+      }
+    },
+    "main": {
+      "type": "contact-us-2-template",
+      "settings": {
+        "display_google_map": true,
+        "google_map_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d9563.708301825649!2d-6.5232472!3d53.183288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7694a309a1c453e0!2sPAINT%20LAB!5e0!3m2!1sen!2s!4v1656603025100!5m2!1sen!2s\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "contact_title": "Get in touch today!",
+        "contact_text_desc": "",
+        "form_title": "Send us an email:",
+        "form_subtitle": "Ask us anything! We will get back to you within 24 hours.",
+        "contact_your_name": "",
+        "contact_phone_number": "",
+        "contact_your_email": "",
+        "display_location": true,
+        "background_color": "#fafafa",
+        "top_title": "Chat with us:",
+        "top_content": "If you have an issue or question that requires immediate assistance, please drop us an email to the left and we will respond to you within 24 hours.",
+        "email_button": "Email",
+        "email": "mailto:info@paintlab.ie",
+        "email_button_bgc": "rgba(0,0,0,0)",
+        "email_button_txtc": "#232323",
+        "email_button_bdc": "#232323",
+        "email_button_bgc_h": "#232323",
+        "email_button_txtc_h": "#ffffff",
+        "email_button_bdc_h": "#232323",
+        "bot_title": "Contact Us:",
+        "bot_content": "Address: <a href=\"https:\/\/www.google.com\/maps\/place\/paintlab.ie\/@53.3153438,-6.3460401,17z\/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu\">Unit D1, Ballymount Dr, Ballymount Industrial Estate, Dublin, D12 CY99, Ireland<\/a>\n<br>\nPhone: <a href=\"tel:+353015733222\" style=\"text-decoration:underline;\"> +353 1 573 3222<\/a>\n<br>\nEmail: <a href=\"mailto:info@paintlab.ie\">info@paintlab.ie<\/a>",
+        "whatsapp_link": "https:\/\/wa.me\/+353852293212",
+        "telegram_link": "https:\/\/t.me\/+353852293212",
+        "show_social": true
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main"
+  ]
+}

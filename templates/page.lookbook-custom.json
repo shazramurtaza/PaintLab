@@ -1,0 +1,94 @@
+{
+  "wrapper": "div.lookbook-page",
+  "sections": {
+    "main": {
+      "type": "lookbook-custom",
+      "settings": {
+        "display_product_detail_share": false,
+        "share_text": "Share",
+        "button": "",
+        "link": ""
+      }
+    },
+    "1656697720fb900635": {
+      "type": "home-collections",
+      "blocks": {
+        "165669772002b4ccf8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Decking-Oil-500x500.jpg",
+            "title": "Decking & Balconies",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "decking-balconies"
+          }
+        },
+        "165669772002b4ccf8-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Polyx-Oil-Original-500x500.jpg",
+            "title": "Floors",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "floors"
+          }
+        },
+        "165669772002b4ccf8-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wood-Wax-Finish-500x500.jpg",
+            "title": "Interior Wood Wax",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "interior-wood-wax"
+          }
+        },
+        "165669772002b4ccf8-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Natural-Oil-Woodstain-500x500.jpg",
+            "title": "Stains",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "stains"
+          }
+        },
+        "165669772002b4ccf8-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TopOil-500x500.jpg",
+            "title": "Worktops, Furniture & Tables",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "worktops-furniture-tables"
+          }
+        }
+      },
+      "block_order": [
+        "165669772002b4ccf8-0",
+        "165669772002b4ccf8-1",
+        "165669772002b4ccf8-2",
+        "165669772002b4ccf8-3",
+        "165669772002b4ccf8-4"
+      ],
+      "settings": {
+        "title": "Wood Finishing",
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "bg_color": "#fff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1656697720fb900635"
+  ]
+}

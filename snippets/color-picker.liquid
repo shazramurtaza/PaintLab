@@ -1,0 +1,227 @@
+<a class="action primary outline shadepicker-open-outline with-text-picker color-piker-btn" href="#shadepicker-popup"><span>Pick The Colour {% comment %}Colour Picker{% endcomment %}</span></a>
+
+<!-- choosable color -->
+<div id="shadepicker-chosen" class="shadepicker-chosen hide">
+  {% comment %}<input type="hidden" id="color-picker-property" name="properties[Color]" value="">{% endcomment %}
+  <div>
+    <h5>Matching Colour:</h5>
+    <p class="name"></p>
+    <div class="shadepick-shade swatch" style="width:30px;height:30px;max-width: 30px;border: 1px solid #222;border:2;">&nbsp;</div>
+  </div>
+</div>
+
+<!-- color picker popup -->
+<div id="shadepicker-popup" class="shadepicker-popup mfp-hide">
+  <div class="shadepicker-inner container col-xxs-24">
+    <div class="shadepicker-shades">
+
+      <div class="color-picke-wrapper">
+        <div class="shadepicker-filters">
+        <div class="col-sm-13 col-xxs-24">
+          <div id="shadepicker-search">
+            {% comment %}<label for="shadepicker-search hide">Search Colours</label>{% endcomment %}
+            <input id="shadepicker-search-input" type="text" class="shadepicker-search-input ui-autocomplete-input" autocomplete="off" oninput="this.value = this.value.toUpperCase()" style="text-transform:uppercase">
+            <a href="#" class="shadepicker-clear" style="display: none">Clear Results</a>
+            <ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="popup_title">
+        <h4 style="margin-left:4%;">
+        {% comment %}
+        {% if pro_tag contains 'exterior wood collection' or pro_tag_handle contains 'exterior-wood-collection' %}
+          Exterior Wood Collection
+        {% endif %}
+        {% if pro_tag contains 'exterior wood transparent collection' or pro_tag_handle contains 'exterior-wood-transparent-collection' %}
+          Exterior Wood Transparent Collection
+        {% endif %}
+        {% if pro_tag contains 'facade collection' or pro_tag_handle contains 'facade-collection' %}
+          Facade Collection
+        {% endif %}
+        {% if pro_tag contains 'uni-primer collection' or pro_tag_handle contains 'uni-primer-collection' %}
+          Uni-Primer Collection
+        {% endif %}
+         {% if pro_tag contains 'interior colour collection' or pro_tag_handle contains 'interior-colour-collection' %}
+          Interior Colour Collection
+        {% endif %}
+        {% if pro_tag contains 'ral & ncs collection' or pro_tag_handle contains 'ral-ncs-collection' %}
+          RAL & NCS Collection
+        {% endif %}
+         {% if pro_tag contains 'interior primer collection' or pro_tag_handle contains 'interior-primer-collection' %}
+          Interior Primer Collection
+        {% endif %}
+         {% endcomment %}
+        </h4>
+      </div>
+      <div class="shadepicker-shades-inner infinite">
+        {% comment %}
+        <div class="shadepick-shade TVT F300" data-shade-code="F6F3E5" data-shade-name="TVT F300">
+          <div class="shade-wrap">
+            <div class="shadepick-shade-name">TVT F300</div>
+            <div class="shadepick-shade-swatch" style="background-color:#F6F3E5;width: 150px;height: 150px;" data-background-image=""></div>
+          </div>
+        </div>
+        {% endcomment %}
+       {% render "color-code-html" ,pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       {% render "color-code-html-2",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       {% render "color-code-html-3",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       
+       {% if pro_tag contains 'interior colour collection' or pro_tag_handle contains 'interior-colour-collection' %}
+           <!-- interior colour collection -->
+           {% render "color-code-html-4",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+           {% render "color-code-html-5",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+           {% render "color-code-html-6",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+           {% render 'color-code-html-7-interior',pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+           <!-- interior colour collection -->
+       {% endif %}
+
+        {% comment %}
+       {% if pro_tag contains 'interior wood transparent collection' or pro_tag_handle contains 'interior-wood-transparent-collection' %}
+         {% render 'color-code-html-7-interior-wood',pro_tag:pro_tag, pro_tag_handle: pro_tag_handle %}
+       {% endif %}
+       {% endcomment %}
+       
+       {% render "color-code-html-7",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       
+       {% if pro_tag contains 'ral & ncs collection' or pro_tag_handle contains 'ral-ncs-collection' %}
+          <!-- RAL & NCS Collection -->
+          {% render "color-code-html-8",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+          {% render "color-code-html-9",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       {% endif %}
+       
+       {% render "color-code-html-10",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+
+       {% if pro_tag contains 'ral & ncs collection' or pro_tag_handle contains 'ral-ncs-collection' %}
+          <!-- RAL & NCS Collection -->
+          {% render "color-code-html-11",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+       {% endif %}
+
+        
+        {% render "color-code-html-12",pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
+        
+        
+      </div>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- JS -->
+<script type="text/javascript">
+   $('.shadepicker-open-outline').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            callbacks: {
+                open: function () {
+                  $('#shadepicker-popup').show();
+                  console.log('open')
+                    // $('.mfp-content .shadepicker-filters').trigger('load');
+                    
+                }
+            }
+    });
+    // $('.shadepicker-open-outline').click(function(e){
+    //   // alert('hhh')
+    //   e.preventDefault();
+    //   var target = $(this).attr('href');
+    //   $(target).show();
+    // });
+    $('.shadepicker-popup .shadepicker-shades-inner .shadepick-shade').on('click', function(){
+        selectShade($(this));  
+    });
+    function selectShade(element) {
+        var code = element.data('shade-code');
+        var name = element.data('shade-name');      
+        // selectByCode(code);
+      $('#shadepicker-popup').hide();
+      $('.shadepicker-chosen').addClass('chosen');
+      $('.shadepicker-chosen').removeClass('hide');
+      // $('.shadepicker-chosen .swatch').attr('style', 'background-color:'+code);
+      // $('.shadepicker-chosen .swatch').attr('style', 'background-color:'+co_hex);
+      $('.shadepicker-chosen .swatch').css({"background-color": "#"+code});
+      $('.shadepicker-chosen .name').text(name);
+      
+      if($('#color-picker-property').length > 0){
+        $('#color-picker-property').val(name);
+      }else{
+        var pro_html = '<input type="hidden" id="color-picker-property" name="properties[Color]" value="'+name+'">';
+        $('#shadepicker-chosen').append(pro_html);
+      }
+      // $('#color-picker-property').val(name);
+       $.magnificPopup.instance.close();
+    }
+   
+    let timeout;
+    let searchInputs = $('.shadepicker-search-onpage, .shadepicker-match-onpage, .shadepicker-search-input');
+   // $('.shadepicker-search-input').on('input', function () {
+    searchInputs.keyup(function () {
+        let input = $(this).val();
+        clearTimeout(timeout);
+      // alert(input);
+      $('#shadepicker-search ul.ui-widget-content li').remove();
+        var trimmedInput = input.trim();
+      // alert($(".shadepicker-shades-inner .shadepick-shade[data-shade-name*='" + trimmedInput + "' i]").length)
+        timeout = setTimeout(function () {
+          $(".shadepicker-shades-inner .shadepick-shade[data-shade-name*='" + trimmedInput + "' i]").each(function(){
+            // var shade_lower = $(this).attr('data-shade-name').toLowerCase();
+            
+            var co_name = $(this).attr('data-shade-name');
+            var co_hex = $(this).attr('data-shade-code');
+            
+            if(!$('#shadepicker-search ul.ui-widget-content li[data-name="'+co_name+'"]').length > 0){  
+              var html = '<li class="ui-menu-item" data-name="'+co_name+'" data-shade-code="'+co_hex+'"><div id="ui-id-96" tabindex="-1" class="ui-menu-item-wrapper">'+co_name.toUpperCase();+'</div></li>';
+              $('#shadepicker-search ul.ui-widget-content').append(html);
+            }else{
+              $('#shadepicker-search ul.ui-widget-content li[data-name="'+co_name+'"]').remove();
+            }
+          });
+            // $('.shadepicker-shades-inner .shadepick-shade').each(function(){
+            //   console.log('in',trimmedInput);
+            //   var co_name = $(this).attr('data-shade-name');
+            //    $(".card[data-agent*='" + trimmedInput + "' i]")
+            //     if(co_name.includes(trimmedInput)){
+            //       console.log('iff')
+            //       if(!$('#shadepicker-search ul.ui-widget-content li[data-name="'+co_name+'"]').length > 0){                    
+            //         var html = '<li class="ui-menu-item" data-name="'+co_name+'"><div id="ui-id-96" tabindex="-1" class="ui-menu-item-wrapper">'+co_name+'</div></li>';
+            //         $('#shadepicker-search ul.ui-widget-content').append(html);
+            //       }
+            //     }else{
+            //       $('#shadepicker-search ul.ui-widget-content li[data-name="'+co_name+'"]').remove();
+            //     }
+            // });
+           $('#shadepicker-search ul.ui-widget-content').show();
+
+          $('#shadepicker-search ul.ui-widget-content li').on('click', function(){
+            var co_name = $(this).attr('data-name');
+            var co_hex = $(this).attr('data-shade-code');
+           
+            $('#shadepicker-search ul.ui-widget-content').hide();
+            $('#shadepicker-popup').hide();
+            $('.shadepicker-chosen').addClass('chosen');
+            $('.shadepicker-chosen').removeClass('hide');
+            // $('.shadepicker-chosen .swatch').attr('style', 'background-color:'+co_hex);
+            $('.shadepicker-chosen .swatch').css({"background-color": "#"+co_hex});
+            // $('.shadepicker-chosen .swatch').css({"background-color": "#"+code});
+            $('.shadepicker-chosen .name').text(co_name);
+            if($('#color-picker-property').length > 0){
+              $('#color-picker-property').val(co_name);
+            }else{
+              var pro_html = '<input type="hidden" id="color-picker-property" name="properties[Color]" value="'+co_name+'">';
+              $('#shadepicker-chosen').append(pro_html);
+            }
+            // $('#color-picker-property').val(co_name);
+            $.magnificPopup.instance.close();
+          });
+          if(!input){
+            $('#shadepicker-search ul.ui-widget-content').hide();
+          }
+        }, 400);
+    });
+</script>

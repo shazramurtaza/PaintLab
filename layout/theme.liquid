@@ -1,0 +1,454 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 no-js"> <![endif]-->
+<!-- [if (gt IE 9)|!(IE)]><! -->
+<html class="no-js">
+  <!-- <![endif] -->
+  <head>
+    <meta name="google-site-verification" content="x3IXr2DGuqGiAUq68FeOtomWM8L1Kef5B1iYTazfWQU">
+    <meta name="google-site-verification" content="cbEkI8o3Cp3yetMnxG6qnhpONAT_IaJozp-qO9SZhnU">
+    <!-- Basic page needs -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    {% if template == 'product' %}
+      <title>
+        {{ product.title | escape }}
+        | Buy Online on Paintlab, Ireland
+      </title>
+      <meta
+        name="description"
+        content="{{ product.title }}. Paintlab.ie has a wide range of products for painters. ☑️Reasonable prices ☑️Europe-wide shipping 📞 +353 1 573 3222"
+      >{% comment %}(057) 850 9912{% endcomment %}
+    {% else %}
+      {% if template == 'collection' %}
+        <title>{{ page_title | escape}}</title>
+      {% else %}
+      <title>paintlab.ie</title>
+      {% endif %}
+      <meta name="description" content="{{ page_description | escape | split: '[/countdown]' | last | strip_html | replace:'(057) 850 9919','+353 1 573 3222' | replace:'(057) 850 9917','+353 1 573 3222' | replace:'(057) 850 9912','+353 1 573 3222'}}">
+    {% endif %}
+
+    {% render 'fb-open-graph-tags' %}
+    {% render 'twitter-card' %}
+
+    <!-- Helpers ================================================== -->
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link canonical-shop-url="{{ shop.url }}/">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="preconnect" data-href="https://fonts.googleapis.com">
+    <link rel="preconnect" data-href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    {% if settings.favicon != blank %}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {% endif %}
+
+    <!-- Styles -->
+    <link
+      rel="preload"
+      href="{{ 'theme-styles.css' | asset_url  }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript><link rel="stylesheet" href="{{ 'theme-styles.css' | asset_url  }}"></noscript>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    {% render 'css-variables' %}
+    {% render 'head_styles' %}
+
+    <!-- Scripts -->
+    {% render 'head_scripts' %}
+
+    {%- unless request.design_mode or template contains 'cart' or template contains 'checkout' -%}
+      {% render 'meta' %}
+    {% endunless %}
+
+    {% include 'meteor-menu', load: 'head' %}
+
+    {{ content_for_header }}
+
+    <!--[if lt IE 9]> {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }} <![endif]-->
+
+    {% comment %}
+      If you store has customers disabled, you can remove the following JS file
+    {% endcomment %}
+
+    {% if template contains 'customers' %}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+      {{ 'customer_area.js' | shopify_asset_url | script_tag }}
+    {% endif %}
+
+    {% render 'linked-options' %}
+    {% if template contains 'product' %}
+      <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    {% endif %}
+
+    {% render 'judgeme_core' %}
+
+    {% render 'digismoothie-candyrack' %}
+    {% comment %}
+      <script>(() => {const installerKey = 'docapp-discount-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
+
+      <script>(() => {const previewKey = 'docapp-discount-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-discount-inst-test')}));}})();</script>
+      {% include 'dp-config' %}
+    {% endcomment %}
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PDQW264');
+    </script>
+    <!-- End Google Tag Manager -->
+    {% render 'bon-loyalty' %}
+    {% render 'bon-loyalty-page' %}
+    {% render 'gsf-conversion-pixels' %}
+  </head>
+
+  {% if settings.layout_body == 'full' %}
+    {%- assign layout_class = 'body-full' -%}
+  {% elsif settings.layout_body == 'boxed' %}
+    {%- assign layout_class = 'body-boxed' -%}
+  {% endif %}
+
+  {% if settings.header_layout == 'vertical' %}
+    {%- assign header_class = 'header-vertical-tpl' -%}
+  {% elsif settings.header_layout == 'parallax' %}
+    {%- assign header_class = 'header-parallax-tpl' -%}
+  {% elsif settings.header_layout == '02' %}
+    {%- assign header_class = 'header-02-tpl' -%}
+  {% endif %}
+
+  {% if settings.layout_home == 'layout_home_3' %}
+    {%- assign home_class = 'layout_home_3' -%}
+  {% elsif settings.layout_home == 'layout_home_4' %}
+    {%- assign home_class = 'layout_home_4' -%}
+  {% elsif settings.layout_home == 'layout_home_5' %}
+    {%- assign home_class = 'layout_home_5' -%}
+  {% elsif settings.layout_home == 'layout_home_6' %}
+    {%- assign home_class = 'layout_home_6' -%}
+  {% elsif settings.layout_home == 'layout_home_7' %}
+    {%- assign home_class = 'layout_home_7' -%}
+  {% elsif settings.layout_home == 'layout_home_9' %}
+    {%- assign home_class = 'layout_home_9' -%}
+  {% elsif settings.layout_home == 'layout_home_12' %}
+    {%- assign home_class = 'layout_home_12' -%}
+  {% elsif settings.layout_home == 'layout_home_14' %}
+    {%- assign home_class = 'layout_home_14' -%}
+  {% elsif settings.layout_home == 'layout_home_18' %}
+    {%- assign home_class = 'layout_home_18' -%}
+  {% endif %}
+
+  <body
+    data-url-lang="{{ routes.cart_url }}"
+    id="{{ page_title | handle }}"
+    class="
+      {{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in{% endif %}
+      {% if template.suffix == 'landing' %} template-index{% else %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% endif %} {{settings.style_product_grid}}{% if settings.layout_style == 'layout_style_1' %} layout_default{% else %} {{settings.layout_style}}{% endif %} {{ home_class }}
+      {% unless settings.enable_before_you_leave_mb %} before-you-leave-disableMobile{% endunless %}{% if settings.product_layout == 'skin_1' %} product_layout_skin_1{% elsif settings.product_layout == 'supermarket' %} product_layout_supermarket{% endif %}{% if settings.layout_body == 'custom_width' %} custom_width{% endif %}{% if settings.enable_button_add_to_cart_color %} enable_button_add_to_cart_color{% endif %}{% if settings.enable_hover_video_product_items %} enable_hover_video_product_items{% endif %}{% unless settings.enable_search %} no-search-header{% endunless %}
+    "
+    data-page-handle="{{ page_title | handle }}"
+  >
+    <script>
+      window.SLIDECART_LOADED = () => {
+        document.querySelectorAll("[data-cart-header-supermarket]").forEach(btn => btn.removeAttribute("data-cart-header-supermarket"))
+      }
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PDQW264"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% if template contains 'index' %}
+      <h1 style="display: none">{{ page_title | split: '|' | first }}</h1>
+    {% endif %}
+    {% render 'wrapper-header' %}
+
+    {% if settings.header_layout == 'vertical' %}
+      <div class="flex-nav-vertical">
+    {% endif %}
+    {% render 'scheme' %}
+    {% if settings.header_layout == 'vertical' %}
+      {% section 'navigation-vertical-menu' %}
+    {% endif %}
+    <div class="wrapper-container wrapper-body">
+      <main class="main-content" role="main">
+        {% capture ICART_FULL_PAGE_LAYOUT %}{{ content_for_layout }}{% endcapture %}{% include 'icart-variables', ICART_FULL_PAGE_LAYOUT: ICART_FULL_PAGE_LAYOUT %}
+      </main>
+
+      {% if settings.layout_style == 'layout_style_surfup' %}
+        {% section 'home-brands' %}
+      {% endif %}
+
+      {% if settings.enable_ask_an_expert %}
+        {% if settings.enable_ask_an_expert_sticky %}
+          <div class="ask-an-expert-sticky" style="display: none;">
+            <a
+              href="javascript:void(0)"
+              title="Ask An Expert"
+              class="btn_ask_an_expert"
+              data-toggle="modal"
+              data-target="#ask_an_expert"
+            >
+              {% if settings.image_ask_an_expert_sticky != blank %}
+                <img
+                  data-srcset="{{ settings.image_ask_an_expert_sticky | img_url: '200x200' }}"
+                  class="lazyload"
+                  data-sizes="auto"
+                >
+              {% else %}
+                <div class="not_img">200 x 100px</div>
+              {% endif %}
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if settings.footer_layout == 'default' %}
+        {% section 'footer' %}
+      {% elsif settings.footer_layout == 'parallax' %}
+        {% section 'footer-parallax' %}
+      {% elsif settings.footer_layout == '02' %}
+        {% section 'footer-2' %}
+      {% elsif settings.footer_layout == '03' %}
+        {% section 'footer-3' %}
+      {% elsif settings.footer_layout == '04' %}
+        {% section 'footer-4' %}
+      {% elsif settings.footer_layout == '05' %}
+        {% section 'footer-5' %}
+      {% elsif settings.footer_layout == '06' %}
+        {% section 'footer-6' %}
+      {% elsif settings.footer_layout == '07' %}
+        {% section 'footer-7' %}
+      {% elsif settings.footer_layout == '08' %}
+        {% section 'footer-8' %}
+      {% elsif settings.footer_layout == '09' %}
+        {% section 'footer-9' %}
+      {% endif %}
+      {% section 'halo-toolbar-mobile' %}
+
+      <div class="footbar-fixed {% if template contains 'product' %}footbar-fixed-product{% endif %}">
+        {% section 'someone-purchased' %}
+        {% section 'GDPR-modal' %}
+        {% if template contains 'product' %}
+          {% if settings.display_sticky %}
+            {% render 'sticky-add-to-cart' with product as product %}
+          {% endif %}
+        {% endif %}
+      </div>
+
+      {% if settings.enable_backtotop %}
+        <div id="back-top" style="display: none;">
+          <a class="nav_up" href="#top" title="Back to top">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if settings.header_layout == 'vertical' %}
+      </div>
+    {% endif %}
+
+    {% if settings.enable_compare_product and template == 'collection' %}
+      <div class="compare-link">
+        <a href="javascript:void(0)" data-compare-selected>
+          <span
+            class="compare-text"
+            {% if settings.enable_multilang %}
+              data-translate="collections.general.compare_selected"
+            {% endif %}
+          >
+            {{- 'collections.general.compare_selected' | t -}}
+          </span>
+          <span class="countPill countPill--positive countPill--alt" data-compare-count></span>
+        </a>
+      </div>
+    {% endif %}
+
+    {% render 'footer_scripts' %}
+
+    {% render 'sweettooth-widgets' %}
+
+    {% render 'search-autocomplete' %}
+
+    {% if settings.header_layout == 'default' %}
+      {% render 'customer_links' %}
+    {% else %}
+      <div class="translate-header" data-translate-header>
+        {% render 'customer_links' %}
+        {% render 'wrapper-top-cart' %}
+      </div>
+    {% endif %}
+
+    {% if settings.enable_search %}
+      {% render 'halo-sidebar-search' %}
+    {% endif %}
+
+    {% render 'size-chart' %}
+
+    {% render 'size-chart-quickview' %}
+
+    {% render 'message-modal' %}
+    {% render 'currency-selector-content' %}
+
+    {% render 'newsletter' %}
+
+    {% if template contains 'product' or settings.enable_ask_an_expert_sticky %}
+      {% render 'ask_an_expert' %}
+    {% endif %}
+
+    {% if template contains 'product' %}
+      {% render 'compareColor-popup' %}
+    {% endif %}
+
+    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+
+    {% render 'recently-viewed-products' %}
+    <div class="wrapper-overlay"></div>
+    {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
+
+    <style>
+      .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      .jdgm-prev-badge .jdgm-prev-badge__stars .jdgm-star,
+      .jdgm-rev-widg__summary .jdgm-rev-widg__summary-stars .jdgm-star,
+      .jdgm-histogram__row .jdgm-histogram__star .jdgm-star, .jdgm-rev .jdgm-rev__header .jdgm-rev__rating .jdgm-star, .jdgm-rev-widg__header .jdgm-rev-widg__summary
+      .jdgm-histogram .jdgm-histogram__star .jdgm-histogram__row .jdgm-rev__rating
+      { font-family: 'JudgemeStar' !important;}
+
+      .jdgm-prev-badge > .jdgm-prev-badge__stars > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      .jdgm-rev-widg__body > .jdgm-paginate > .jdgm-paginate__next-page,
+      .jdgm-rev-widg__body > .jdgm-paginate > .jdgm-paginate__last-page,
+      .jdgm-rev-widg__body > .jdgm-paginate > .jdgm-paginate__prev-page,
+      .jdgm-rev-widg__body > .jdgm-paginate > .jdgm-paginate__first-page
+      {
+      font-family: "JudgemeIcons" !important;
+      }
+
+      #judgeme_product_reviews > .jdgm-rev-widg > .jdgm-rev-widg__header > .jdgm-form-wrapper > .jdgm-form > .jdgm-form__rating-fieldset > .jdgm-form__rating > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      .jdgm-histogram  > .jdgm-histogram__row > .jdgm-histogram__star > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      .jdgm-rev__header > .jdgm-rev__rating > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      #judgeme_product_reviews > .jdgm-rev-widg > .jdgm-rev-widg__header > .jdgm-rev-widg__summary > .jdgm-rev-widg__summary-stars > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+      .jdgm-carousel-item__review > .jdgm-carousel-item__review-rating > .jdgm-star {
+      font-family: 'JudgemeStar' !important;
+      }
+
+      #judgeme_product_reviews > div > div.jdgm-rev-widg__header > div.jdgm-histogram.jdgm-temp-hidden > div > div.jdgm-histogram__star > span,
+      #judgeme_product_reviews > div > div.jdgm-rev-widg__body > div.jdgm-rev-widg__reviews > div > div.jdgm-rev__header > span.jdgm-rev__rating > a,
+      div.product-collection__reviews > div.jdgm-widget.jdgm-preview-badge > div > span.jdgm-prev-badge__stars > a{
+      font-family: 'JudgemeStar' !important;
+      }
+      .jdgm-prev-badge__text {
+      visibility: visible;
+      }
+    </style>
+    <script>
+      scrollLoad = function(){setTimeout( function(){
+      jdgm.customizeBadges()
+      }, 500);}
+
+      document.addEventListener("scroll", scrollLoad);
+    </script>
+
+    {% section 'tax-selector' %}
+
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'https://static.willdesk.com/c/willdesk.min.js?v=';
+        s.src += new Date().getTime();
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    {% include 'smile-initializer' %}
+
+    {% if template contains 'product' %}
+      <script type="lazyload2">
+        {
+          "@context":"http://schema.org",
+          "@type":"Product",
+          "@id":"{{ shop.url }}{{ product.url}}",
+          "name": {{ product.title | json }},
+          "sku": {{ product.selected_or_first_available_variant.sku | json }},
+          "description": {{ product.description | strip_html | truncatewords: 50 | json }},
+          "url": {{ canonical_url | json }},
+          "image": "https:{{ product.featured_image | product_img_url: 'grande' }}",
+          "brand": {
+            "@type": "Brand",
+            "name": {{ product.vendor | json }},
+            "url": {{ jsonld_brand_url | json }}
+          },
+          "gtin": "{{ product.selected_or_first_available_variant.barcode }}",
+          "offers": [{
+            "@type": "Offer",
+            "priceCurrency": "{{ cart.currency.iso_code }}",
+            "price": "{{ product.selected_or_first_available_variant.price | money_without_currency | remove: ',' }}",
+            "availability": "http://schema.org/{% if product.selected_or_first_available_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "itemCondition": "http://schema.org/NewCondition",
+            "seller": "{{ shop.name | escape }}",
+            "url": "{{ shop.secure_url }}{{ product.selected_or_first_available_variant.url }}"
+          }]
+
+        }
+      </script>
+    {% endif %}
+    <script type='application/ld+json'> 
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Plumber",
+      "name": "Paintlab.ie",
+      "url": "paintlab.ie",
+      "logo": "paintlab.ie",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit D1, Ballymount Dr, Ballymount Industrial Estate",
+        "addressLocality": "Dublin",
+        "postalCode": "D12 CY99",
+        "addressCountry": "Ireland"
+      },
+      "hasMap": "https://www.google.com/maps/place/paintlab.ie/@53.3153438,-6.3460401,17z/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+35315733222"
+      }
+    }
+    </script>
+
+    {{ 'source.js' | asset_url | script_tag }}
+    <!-- {{ 'footer.js' | asset_url | script_tag }} -->
+  </body>
+</html>
+

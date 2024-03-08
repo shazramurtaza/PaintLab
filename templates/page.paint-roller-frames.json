@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": true
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/R017-9-500x500-1.jpg",
+            "title": "9\" - 18\" Paint Roller Frames",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "9-18-roller-frames"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1693-H-Staalmeester-Radiatorbeugel-40cm.png",
+            "title": "Mini Paint Roller Frames",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "mini-roller-frames"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RR028_Sherlock_Mini_Unpackaged-removebg-preview.png",
+            "title": "Jumbo Paint Roller Frames",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "jumbo-roller-frames"
+          }
+        },
+        "image_bmR4Gz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/71LWWy2AiIL._AC_SX679_-removebg-preview_444321f8-af1b-4432-825a-21909eacd692.png",
+            "title": "Speciality Paint Rollers",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "speciality-rollers"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_bmR4Gz"
+      ],
+      "settings": {
+        "title": "Roller Frames",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "22px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

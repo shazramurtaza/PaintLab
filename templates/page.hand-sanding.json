@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false
+      }
+    },
+    "16566585978e60aaf7": {
+      "type": "home-collections",
+      "blocks": {
+        "16566585979d603897-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kostka-sierna-removebg-preview_f06ffcd4-c953-423f-8d5b-55954988ad21.png",
+            "title": "Sanding Pads & Blocks",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "sanding-pads-blocks"
+          }
+        },
+        "16566585979d603897-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Indasa-Rhynalox-Plusroll.png",
+            "title": "Sanding Rolls",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "sanding-rolls"
+          }
+        },
+        "16566585979d603897-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mirka-Handy-Sanding-Block-With-Extraction-80-230.png",
+            "title": "Hand Sanders",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "hand-sanders-more"
+          }
+        },
+        "image_BcCK7w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mirkainterfacepad150mm67h10mm_d6633229-7802-46ae-972f-7104b7c94e01.png",
+            "title": "Parts & Accessories",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "hand-sanding-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "16566585979d603897-0",
+        "16566585979d603897-1",
+        "16566585979d603897-2",
+        "image_BcCK7w"
+      ],
+      "settings": {
+        "title": "Hand Sanding",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "22px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566585978e60aaf7"
+  ]
+}

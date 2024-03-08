@@ -1,0 +1,148 @@
+{
+  "wrapper": "div.lookbook-page",
+  "sections": {
+    "main": {
+      "type": "lookbook",
+      "settings": {
+        "display_product_detail_share": false,
+        "show_heading": false,
+        "share_text": "Share",
+        "button": "",
+        "link": "",
+        "autoplay": true,
+        "speed": "5000",
+        "transition": "true",
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#ffffff",
+        "position_slick_arrow": "-35px"
+      }
+    },
+    "165670062879cbbc0c": {
+      "type": "home-collections",
+      "blocks": {
+        "001215ff-e47e-4d8b-bd97-392596c6ee07": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VMG02826-removebg-preview_56274804-5849-41ab-b540-0378b57ee80e.png",
+            "title": "Thinners",
+            "color_title": "#0f0f0f",
+            "btn_shop_now": "Shop Now",
+            "link": "thinners"
+          }
+        },
+        "1656700628163e6de3-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VMG02825-scaled-500x500.jpg",
+            "title": "Brush Cleaner",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "brush-cleaner"
+          }
+        },
+        "1656700628163e6de3-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4044899430025.600x0-2-500x500.jpg",
+            "title": "Degreasers",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "degreasers"
+          }
+        },
+        "1656700628163e6de3-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4044899387022.600x0-1-500x500.jpg",
+            "title": "Mould Removers",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "mould-removers"
+          }
+        },
+        "1656700628163e6de3-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cleaning-img.jpg",
+            "title": "Dust Removal",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "dust-removal"
+          }
+        },
+        "4b29b7d8-0159-4149-8a01-ef978fb8b3dd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4044899648055.0x1000-500x500.jpg",
+            "title": "Hand Cleaner",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "hand-cleaner"
+          }
+        },
+        "f576203e-01e5-4a3c-ac18-7776658edd13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4044899640349.500x0-500x500_1.jpg",
+            "title": "Wallpaper & Paint Removal",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "wallpaper-paint-removal"
+          }
+        },
+        "1656700628163e6de3-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wash-and-Care-video-500x500.jpg",
+            "title": "Wooden Floor Care",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "wooden-floor-care"
+          }
+        },
+        "8054b3bf-caae-43cb-b481-3b233d1371f8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wood-Reviver-Power-Gel-500x500.jpg",
+            "title": "Decking Cleaning",
+            "color_title": "#202020",
+            "btn_shop_now": "Shop Now",
+            "link": "decking-cleaning"
+          }
+        }
+      },
+      "block_order": [
+        "001215ff-e47e-4d8b-bd97-392596c6ee07",
+        "1656700628163e6de3-1",
+        "1656700628163e6de3-2",
+        "1656700628163e6de3-4",
+        "1656700628163e6de3-3",
+        "4b29b7d8-0159-4149-8a01-ef978fb8b3dd",
+        "f576203e-01e5-4a3c-ac18-7776658edd13",
+        "1656700628163e6de3-0",
+        "8054b3bf-caae-43cb-b481-3b233d1371f8"
+      ],
+      "settings": {
+        "title": "Cleaning",
+        "img_style_with_border": true,
+        "title_style": "style_2",
+        "layout": "default",
+        "content_style": "style_2",
+        "show_slider": false,
+        "bg_color": "#ffffff",
+        "font_size_title": "16px",
+        "collection_results_per_row": "4",
+        "btn_view_all": "",
+        "link_view_all": "",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165670062879cbbc0c"
+  ]
+}
