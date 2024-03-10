@@ -492,11 +492,16 @@
                       </span>
                   </div>
                   {% endif %}
-
+                  {% if product.tags contains 'manual_color' %}
+                  <div class="color_code">
+                    <p>Enter Color Name or Color Code</p>
+                  <input type="text" id="color-picker-property-dup" name="properties[ColorCode]" value="">
+                  </div>
+                {% else %}
                     {% comment %}
                     <!-- color picker code -->
                     {% render 'color-picker' %}
-                    <!-- end color picker code -->
+                    <!-- end color picker code -->s
                     {% endcomment %}
                     {% assign pro_tag = product.tags | downcase %}
                     {% assign pro_tag_handle = product.tags | handleize %}
@@ -505,7 +510,7 @@
                     {% render 'color-picker' , pro_tag: pro_tag, pro_tag_handle: pro_tag_handle %}
                     <!-- end color picker code -->
                     {% endif %}
-                    
+                  {% endif %}
                         
                   {% if settings.enable_checkbox %}
                       
