@@ -493,10 +493,18 @@
                   </div>
                   {% endif %}
                   {% if product.tags contains 'manual_color' %}
-                  <div class="color_code">
-                    <p>Enter Color Name or Color Code</p>
+                    <h3>White/Color:</h3>
+                    <div class="custom-select-wrapper">
+                    <select id="optionSelect"  class="custom-select" onchange="optionChanged()" name="properties[ColorOption]" placeholder="Message"  >
+                      <option value="White" selected>White</option>
+                      <option value="Coloured">Coloured</option>
+                    </select>
+                  </div>
+                  <div id="toggleDiv" class="color_code">
+                    <h3>Enter Colour Name or Code:</h3>
                   <input type="text" id="color-picker-property-dup" name="properties[ColorCode]" value="">
                   </div>
+               
                 {% else %}
                     {% comment %}
                     <!-- color picker code -->
@@ -714,3 +722,62 @@
       </div>
   </div>
 </div>
+
+<style>
+.color_code {
+display: none;
+margin-top: 15px;
+}
+.custom-select-wrapper {
+  position: relative;
+  max-width: 200px;
+}
+
+.custom-select-wrapper:after {
+  content: "\25BC"; /* Unicode character for down-pointing triangle */
+  font-size: 10px;
+  color: #555; /* Change color as needed */
+  right: 10px;
+  top: 65%;
+  height: 100%;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.custom-select {
+  -webkit-appearance: none; /* Removes default chrome and safari style */
+  -moz-appearance: none; /* Removes default style Firefox */
+  appearance: none; /* Remove default arrow icon in newer browsers*/ 
+  /* Rest of styling here (padding, font size etc.) */
+  padding: 5px 30px 5px 10px; /* Add some padding and adjust as needed */
+  border: 1px solid #ccc; /* Custom border */
+  
+}
+.shopify-product-form h3 {
+margin-bottom: 15px;
+}
+</style>
+
+<script>
+  function toggleDivVisibility() {
+    var select = document.getElementById('optionSelect');
+    var div = document.getElementById('toggleDiv');
+  
+    if (select.value === 'Coloured') {
+      div.style.display = 'block'; // Show the div
+    } else {
+      div.style.display = 'none'; // Hide the div
+    }
+  }
+  function optionChanged() {
+    // This function is called in real-time when the selected option changes
+    console.log('The option has been changed!');
+    toggleDivVisibility();
+    // Implement additional logic here as needed
+  }
+  // You can call this function onload or on DOMContentLoaded event to initialize the correct state
+  document.addEventListener('DOMContentLoaded', toggleDivVisibility);
+  
+</script>
