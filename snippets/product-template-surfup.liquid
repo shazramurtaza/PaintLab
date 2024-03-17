@@ -493,10 +493,17 @@
                   </div>
                   {% endif %}
                   {% if product.tags contains 'manual_color' %}
+                      
+                    <h3>Choose Color Option:</h3>
+                    <select id="Choose Your Color Option" name="properties[ColorOption]" placeholder="Message"  >
+                      <option value="White" selected>White</option>
+                      <option value="Coloured">Coloured</option>
+                    </select>
                   <div class="color_code">
-                    <h3>Enter Colour Name or Code</h3>
+                    <h3>Enter Colour Name or Code:</h3>
                   <input type="text" id="color-picker-property-dup" name="properties[ColorCode]" value="">
                   </div>
+                 
                 {% else %}
                     {% comment %}
                     <!-- color picker code -->
