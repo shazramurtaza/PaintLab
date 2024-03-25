@@ -38,7 +38,52 @@
       This form must use 'create_customer'
       {% endcomment %}
 
-      {% render "customer-fields", form_id: "nAt9k2" %}
+      {% form 'create_customer' %}
+
+      {% render 'form-errors-custom', form: form %}
+
+      <div class="form-group">
+        <label for="first_name">
+          <span {% if settings.enable_multilang %}data-translate="customer.register.first_name"{%endif%}>
+            {{ 'customer.register.first_name' | t }}
+          </span>
+        </label>
+        <input type="text" value="" name="customer[first_name]" id="first_name" {% if form.errors contains "first_name" %}class="error"{% endif %} >
+      </div>
+
+      <div class="form-group">
+        <label for="last_name">
+          <span {% if settings.enable_multilang %}data-translate="customer.register.last_name"{%endif%}>
+            {{ 'customer.register.last_name' | t }}
+          </span>
+        </label>      
+        <input type="text" value="" name="customer[last_name]" id="last_name" {% if form.errors contains "last_name" %}class="error"{% endif %} >
+      </div>
+
+      <div class="form-group">
+        <label for="email">
+          <span {% if settings.enable_multilang %}data-translate="customer.register.email"{%endif%}>
+            {{ 'customer.register.email' | t }}
+          </span>
+          <em>*</em>
+        </label>      
+        <input type="email" value="" name="customer[email]" id="email" {% if form.errors contains "email" %}class="error"{% endif %}  >
+      </div>
+
+      <div class="form-group">
+        <label for="password">
+          <span {% if settings.enable_multilang %}data-translate="customer.register.password"{%endif%}>
+            {{ 'customer.register.password' | t }}
+          </span>
+          <em>*</em>
+        </label>      
+        <input type="password" value="" name="customer[password]" id="create_password" {% if form.errors contains "password" %}class="error"{% endif %}>
+      </div>
+
+      <div class="action-btn">
+        <input type="submit" {% if settings.enable_multilang %}data-translate="customer.register.submit"{%endif%} value="{{ 'customer.register.submit' | t }}" class="btn btn-padd42">
+      </div>
+      {% endform %}
     </div>
   </div>
 </div>
