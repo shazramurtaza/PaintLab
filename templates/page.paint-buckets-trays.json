@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,7 +21,7 @@
         "16566585979d603897-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8616_4-Gallon_bucket_ANGLED_PIC-removebg-preview.png",
+            "image": "shopify://shop_images/8616_4-Gallon_bucket_ANGLED_PIC-removebg-preview.png",
             "title": "Paint Buckets & Scuttles",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -22,7 +31,7 @@
         "16566585979d603897-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BR412-21_Big_Ben_Tray-removebg.png",
+            "image": "shopify://shop_images/BR412-21_Big_Ben_Tray-removebg.png",
             "title": "Paint Trays",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -32,17 +41,17 @@
         "16566585979d603897-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8619_Pelican_bucket-removebg-preview_1.png",
+            "image": "shopify://shop_images/8619_Pelican_bucket-removebg-preview_1.png",
             "title": "Paint Kettles",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
-            "link": "kettles"
+            "link": "paint-kettles"
           }
         },
         "image_aa3eBB": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8659_Pelican_paint-saving_lid-removebg-preview.png",
+            "image": "shopify://shop_images/8659_Pelican_paint-saving_lid-removebg-preview.png",
             "title": "Lids & Liners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
