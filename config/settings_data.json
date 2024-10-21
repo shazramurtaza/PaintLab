@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "custom_page_width": 1740,
@@ -15,7 +24,7 @@
     "pluginseo_metaDescriptionTruncateEnableForPages": false,
     "pluginseo_metaDescriptionTruncateEnableForArticles": false,
     "pluginseo_metaDescriptionTruncateEnableForBlogs": false,
-    "pluginseo_structuredDataSocialProfileLinks": "https:\/\/www.facebook.com\/paintlab.ie\nhttps:\/\/twitter.com\/paintlab_ie\nhttps:\/\/www.instagram.com\/paintlab.ie\/\nhttps:\/\/www.youtube.com\/channel\/UC7tdBK2GfqB8HgBn0EnwYRQ",
+    "pluginseo_structuredDataSocialProfileLinks": "https://www.facebook.com/paintlab.ie\nhttps://twitter.com/paintlab_ie\nhttps://www.instagram.com/paintlab.ie/\nhttps://www.youtube.com/channel/UC7tdBK2GfqB8HgBn0EnwYRQ",
     "pluginseo_structuredDataReviewApp": "judgeme",
     "layout_body": "default",
     "custom_width_size": 1200,
@@ -26,7 +35,7 @@
     "product_layout": "surfup",
     "blog_layout": "default",
     "footer_layout": "05",
-    "favicon": "shopify:\/\/shop_images\/paintlab-fav-icon.png",
+    "favicon": "shopify://shop_images/paintlab-fav-icon.png",
     "body_font_size": "16",
     "display_breadcrumb": true,
     "breadcrumb_text_transform": "capitalize",
@@ -65,8 +74,8 @@
     "size_guide_text": "Size Guide",
     "custom_size_chart_header": "Size Chart",
     "size_chart": "different",
-    "custom_size_chart": "shopify:\/\/shop_images\/size-chart-compressor.jpg",
-    "img_trust": "shopify:\/\/shop_images\/trust_800x_45b63f7c-f3f0-4e29-88b1-6aa77ac73f34.png",
+    "custom_size_chart": "shopify://shop_images/size-chart-compressor.jpg",
+    "img_trust": "shopify://shop_images/trust_800x_45b63f7c-f3f0-4e29-88b1-6aa77ac73f34.png",
     "style_quickview_grid_4": "style_1",
     "enable_wishlist": true,
     "display_sticky": true,
@@ -140,7 +149,7 @@
     "display_popup_newsletter": true,
     "hidden_default": true,
     "popup_newsletter_expire": "1",
-    "newsletter": "shopify:\/\/shop_images\/paintlab-products_6.jpg",
+    "newsletter": "shopify://shop_images/paintlab-products_6.jpg",
     "popup_newsletter_title": "Join Our Mailing List",
     "popup_newsletter_des": "Sign Up for exclusive updates,  <br>new arrivals & insider-only discounts",
     "popup_newsletter_text_note": "No, thanks",
@@ -149,7 +158,7 @@
     "color_text_toolbar": "#bbb0a0",
     "display_popup_social": true,
     "enable_ask_an_expert": true,
-    "ask_an_expert": "<i class=\"fa fa-question-circle\"><\/i><span class=\"text\">Have Questions?<\/span><a href=\"javascript:void(0)\" title=\"Ask An Expert\">Ask An Expert<\/a>",
+    "ask_an_expert": "<i class=\"fa fa-question-circle\"></i><span class=\"text\">Have Questions?</span><a href=\"javascript:void(0)\" title=\"Ask An Expert\">Ask An Expert</a>",
     "ask_an_expert_header": "Have Questions?",
     "ask_an_expert_title": "Ask the Fashion Expert anything on Ella Boutique",
     "ask_an_expert_des": "We will follow up with you via email within 24-36 hours",
@@ -177,15 +186,15 @@
     "show_compare_size": false,
     "show_compare_color": false,
     "show_compare_option": false,
-    "social_facebook_link": "https:\/\/www.facebook.com\/paintlab.ie",
-    "social_twitter_link": "https:\/\/twitter.com\/paintlab_ie",
+    "social_facebook_link": "https://www.facebook.com/paintlab.ie",
+    "social_twitter_link": "https://twitter.com/paintlab_ie",
     "social_vimeo_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/paintlabie\/",
+    "social_instagram_link": "https://www.instagram.com/paintlabie/",
     "social_google_plus_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/watch?v=ZE7NJSpzIqA",
+    "social_youtube_link": "https://www.youtube.com/watch?v=ZE7NJSpzIqA",
     "body_bg": "#ffffff",
     "body_color": "#232323",
     "link_color": "#232323",
@@ -236,7 +245,7 @@
     "color_sticky": "#3c3c3c",
     "color_variants": "#646464",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/PAINTLAB_logo-SAND.png",
+    "checkout_logo_image": "shopify://shop_images/PAINTLAB_logo-SAND.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
@@ -263,7 +272,7 @@
     "infinity_scroll_feature": true,
     "layout_home": "layout_home_3",
     "license": "",
-    "mailing_list_form_action": "\/\/myshopify.us9.list-manage.com\/subscribe\/post?u=f03cabb421b3912425cda25cc&amp;id=2b084b0139",
+    "mailing_list_form_action": "//myshopify.us9.list-manage.com/subscribe/post?u=f03cabb421b3912425cda25cc&amp;id=2b084b0139",
     "pluginseo_structuredDataDisplayLocalBusiness": "false",
     "pluginseo_structuredDataLogo": "#<ActionDispatch::Http::UploadedFile:0x000055f46c8ff0f0>",
     "search_placeholder": "Suche | search",
@@ -278,8 +287,8 @@
             "disabled": true,
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/Banner_1880_x_720.png",
-              "image_slide_mb": "shopify:\/\/shop_images\/Banner_450_x_300.png",
+              "image_slide": "shopify://shop_images/Banner_1880_x_720.png",
+              "image_slide_mb": "shopify://shop_images/Banner_450_x_300.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -303,7 +312,7 @@
               "color_des": "#ffffff",
               "color_des_mb": "#ffffff",
               "button_slide": "",
-              "link": "https:\/\/www.paintlab.ie\/collections\/valentines-day-sale",
+              "link": "https://www.paintlab.ie/collections/valentines-day-sale",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#282323",
@@ -337,8 +346,8 @@
             "disabled": true,
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/Banner_1880_x_720_538d574e-2f32-46d9-9d67-ef55d70a7922.png",
-              "image_slide_mb": "shopify:\/\/shop_images\/Banner_450_x_300_px_1.png",
+              "image_slide": "shopify://shop_images/Banner_1880_x_720_538d574e-2f32-46d9-9d67-ef55d70a7922.png",
+              "image_slide_mb": "shopify://shop_images/Banner_450_x_300_px_1.png",
               "style_content": "style_1",
               "alignment": "custom",
               "alignment_custom": "14%",
@@ -362,7 +371,7 @@
               "color_des": "#232323",
               "color_des_mb": "#ffffff",
               "button_slide": "",
-              "link": "shopify:\/\/products\/front-door-painting-kit-by-tikkurila",
+              "link": "shopify://products/front-door-painting-kit-by-tikkurila",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#232323",
@@ -395,8 +404,8 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/Banner_1880_x_720_v1.png",
-              "image_slide_mb": "shopify:\/\/shop_images\/Banner_450_x_300_px_4.png",
+              "image_slide": "shopify://shop_images/Banner_1880_x_720_v1.png",
+              "image_slide_mb": "shopify://shop_images/Banner_450_x_300_px_4.png",
               "style_content": "style_1",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -420,7 +429,7 @@
               "color_des": "#232323",
               "color_des_mb": "#ffffff",
               "button_slide": "",
-              "link": "https:\/\/www.paintlab.ie\/search?options%5Bprefix%5D=last&q=oldfields",
+              "link": "https://www.paintlab.ie/search?options%5Bprefix%5D=last&q=oldfields",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#232323",
@@ -497,7 +506,7 @@
           "1541560311488": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/roll-a-tray-MAX-logo-1-e1634806691772.png",
+              "image": "shopify://shop_images/roll-a-tray-MAX-logo-1-e1634806691772.png",
               "title": "Loremous",
               "link": ""
             }
@@ -505,7 +514,7 @@
           "1541560317185": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Wooster_Logo.png",
+              "image": "shopify://shop_images/Wooster_Logo.png",
               "title": "Isablella",
               "link": ""
             }
@@ -513,7 +522,7 @@
           "1541560319232": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/zorr-corp-orange-black_logo-1-e1634806516542.png",
+              "image": "shopify://shop_images/zorr-corp-orange-black_logo-1-e1634806516542.png",
               "title": "Loremous",
               "link": ""
             }
@@ -521,7 +530,7 @@
           "1541560320472": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/logo-BDT.png",
+              "image": "shopify://shop_images/logo-BDT.png",
               "title": "FERMENDS",
               "link": ""
             }
@@ -646,7 +655,7 @@
           "1542092799865-0": {
             "type": "image",
             "settings": {
-              "title": "<b>Cosmopolis<\/b> <br>Series",
+              "title": "<b>Cosmopolis</b> <br>Series",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -655,7 +664,7 @@
           "1542092799865-1": {
             "type": "image",
             "settings": {
-              "title": "<b>Suitó<\/b> <br>  Serie",
+              "title": "<b>Suitó</b> <br>  Serie",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -664,7 +673,7 @@
           "1542092799865-2": {
             "type": "image",
             "settings": {
-              "title": "<b>Milancélos<\/b><br>Serie",
+              "title": "<b>Milancélos</b><br>Serie",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -673,7 +682,7 @@
           "1542093147809": {
             "type": "image",
             "settings": {
-              "title": "<b>Blazéro<\/b><br> Serie",
+              "title": "<b>Blazéro</b><br> Serie",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -682,7 +691,7 @@
           "1542093171415": {
             "type": "image",
             "settings": {
-              "title": "<b>La Cosmó<\/b><br>Serie",
+              "title": "<b>La Cosmó</b><br>Serie",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -691,7 +700,7 @@
           "1542093189303": {
             "type": "image",
             "settings": {
-              "title": "<b>Pulvinar<\/b><br>Serie",
+              "title": "<b>Pulvinar</b><br>Serie",
               "color_title": "#232323",
               "btn_shop_now": "",
               "link": ""
@@ -732,7 +741,7 @@
           "layout_style": "layout_style_1",
           "display_banner": true,
           "banner_is": "left",
-          "image": "shopify:\/\/shop_images\/paintlab-products_4.jpg",
+          "image": "shopify://shop_images/paintlab-products_4.jpg",
           "banner_heading": "New Arrivals",
           "font_size_banner_heading": "40px",
           "color_banner_heading": "#ffffff",
@@ -743,7 +752,7 @@
           "font_size_banner_des": "14px",
           "color_banner_des": "#ffffff",
           "banner_button": "Shop Now",
-          "link": "shopify:\/\/collections\/new",
+          "link": "shopify://collections/new",
           "banner_button_2": "",
           "link_2": "",
           "bg_banner_button": "#f84248",
@@ -784,7 +793,7 @@
           "layout_style": "layout_style_1",
           "display_banner": true,
           "banner_is": "right",
-          "image": "shopify:\/\/shop_images\/paintlab-products_3.jpg",
+          "image": "shopify://shop_images/paintlab-products_3.jpg",
           "banner_heading": "ON SALE",
           "font_size_banner_heading": "40px",
           "color_banner_heading": "#ffffff",
@@ -795,7 +804,7 @@
           "font_size_banner_des": "14px",
           "color_banner_des": "#ffffff",
           "banner_button": "Shop Now",
-          "link": "shopify:\/\/collections\/sale",
+          "link": "shopify://collections/sale",
           "banner_button_2": "",
           "link_2": "",
           "bg_banner_button": "#f84248",
@@ -810,7 +819,7 @@
           "text_alignment": "left",
           "featured_products_des": "",
           "featured_products_text_link": "View All",
-          "featured_products_link": "shopify:\/\/collections\/sale",
+          "featured_products_link": "shopify://collections/sale",
           "color_text_link": "#282624",
           "title_style": "style_2",
           "show_slider_featured_collection": "sale",
@@ -973,7 +982,7 @@
         "settings": {
           "message": false,
           "layout": "full",
-          "message_text": "<span>🚚<\/span> <span> Free Delivery | On all orders over €60<\/span>",
+          "message_text": "<span>🚚</span> <span> Free Delivery | On all orders over €60</span>",
           "message_link": "",
           "show_close": true,
           "bg_color_annou": "#f84248",
@@ -992,7 +1001,7 @@
           "cd03a84a-c3c7-4af4-8a0c-cb7f6ff60e6e": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Osmo_Logo_cbac1d5b-4d2c-4e5a-8a47-973b90a44d37.png",
+              "image": "shopify://shop_images/Osmo_Logo_cbac1d5b-4d2c-4e5a-8a47-973b90a44d37.png",
               "title": "",
               "link": ""
             }
@@ -1000,7 +1009,7 @@
           "bd6bbff7-e9ae-45e6-b22f-e22243849b08": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/staalmeester_logo.png",
+              "image": "shopify://shop_images/staalmeester_logo.png",
               "title": "",
               "link": ""
             }
@@ -1008,7 +1017,7 @@
           "e37dabb7-e744-484f-8cec-5fca97bac1f7": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/wooster_logo_f2adeb32-1e25-499f-b327-51e9737193d9.png",
+              "image": "shopify://shop_images/wooster_logo_f2adeb32-1e25-499f-b327-51e9737193d9.png",
               "title": "",
               "link": ""
             }
@@ -1016,7 +1025,7 @@
           "3a9cfe4a-3897-4db4-bc5e-41b480212f7b": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/dolphin_logo_02a96c8c-1aa4-469e-850d-ce58198a3cb5.png",
+              "image": "shopify://shop_images/dolphin_logo_02a96c8c-1aa4-469e-850d-ce58198a3cb5.png",
               "title": "",
               "link": ""
             }
@@ -1066,7 +1075,7 @@
           "title_sub": "",
           "font_size_title_sub": "12px",
           "color_title_sub": "",
-          "des": "<p><strong>• Get the supplies you need quickly and easily!<\/strong> <br\/>Paintlab.ie is the go-to supplier for Professional Painters and DIY enthusiasts. Our direct brokering services offer you convenient access to a wide range of painting supplies ideal for New Construction, Remodels, Real Estate, and Residential jobs. <\/p><p><strong>• Save your time and money <\/strong><br\/>Take advantage of our exclusive access to leading sources in the Painting Industry and save yourself time and money! Our unparalleled resources allow us to provide you with the highest-quality products needed for your project at unbeatable prices.<\/p><p><strong>• Quality you can trust!<\/strong><br\/>With our 50+ years of combined experience and a vast selection of over 10,000 products from leading manufacturers, you can be sure you'll find exactly what you need.<\/p>",
+          "des": "<p><strong>• Get the supplies you need quickly and easily!</strong> <br/>Paintlab.ie is the go-to supplier for Professional Painters and DIY enthusiasts. Our direct brokering services offer you convenient access to a wide range of painting supplies ideal for New Construction, Remodels, Real Estate, and Residential jobs. </p><p><strong>• Save your time and money </strong><br/>Take advantage of our exclusive access to leading sources in the Painting Industry and save yourself time and money! Our unparalleled resources allow us to provide you with the highest-quality products needed for your project at unbeatable prices.</p><p><strong>• Quality you can trust!</strong><br/>With our 50+ years of combined experience and a vast selection of over 10,000 products from leading manufacturers, you can be sure you'll find exactly what you need.</p>",
           "color_des": "#f8f8f8",
           "font_size_des": "16px",
           "button_text": "",
@@ -1087,8 +1096,8 @@
           "04756e5a-c2bd-4cd1-afc7-cc1e9ec7dd31": {
             "type": "Text",
             "settings": {
-              "icon": "<i class=\"fa fa-truck\" aria-hidden=\"true\"><\/i>",
-              "text": "FREE DELIVERY ON ORDERS OVER €75.- \/ £75.-",
+              "icon": "<i class=\"fa fa-truck\" aria-hidden=\"true\"></i>",
+              "text": "FREE DELIVERY ON ORDERS OVER €75.- / £75.-",
               "link": "",
               "text_des": ""
             }
@@ -1096,7 +1105,7 @@
           "0896ba9c-a592-4f8e-996c-753155f337a3": {
             "type": "Text",
             "settings": {
-              "icon": "<i class=\"fa fa-fire\" aria-hidden=\"true\"><\/i>",
+              "icon": "<i class=\"fa fa-fire\" aria-hidden=\"true\"></i>",
               "text": "ORDERED TODAY, SHIPPED TODAY",
               "link": "",
               "text_des": ""
@@ -1105,7 +1114,7 @@
           "8dd434ea-7cf5-4dae-95a5-55387c8a72d3": {
             "type": "Text",
             "settings": {
-              "icon": "<i class=\"fa fa-shopping-bag\" aria-hidden=\"true\"><\/i>",
+              "icon": "<i class=\"fa fa-shopping-bag\" aria-hidden=\"true\"></i>",
               "text": "CLICK & COLLECT AVAILABLE",
               "link": "",
               "text_des": ""
@@ -1115,7 +1124,7 @@
             "type": "Text",
             "disabled": true,
             "settings": {
-              "icon": "<i class=\"fa fa-location-arrow\" aria-hidden=\"true\"><\/i>",
+              "icon": "<i class=\"fa fa-location-arrow\" aria-hidden=\"true\"></i>",
               "text": "IRELAND & NORTHERN IRELAND DELIVERY",
               "link": "",
               "text_des": ""
@@ -1199,7 +1208,7 @@
           "privacy_policy_color": "#818181",
           "content": "The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. Please click Accept Cookies to continue to use the site.",
           "privacy_policy_text": "privacy policy",
-          "privacy_policy_link": "https:\/\/policies.google.com\/",
+          "privacy_policy_link": "https://policies.google.com/",
           "accept_cookies_text": "accept"
         }
       },
@@ -1209,7 +1218,7 @@
           "1546921086313": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-1-compressor.jpg",
+              "image": "shopify://shop_images/brand-1-compressor.jpg",
               "title": "Loremous",
               "link": ""
             }
@@ -1217,7 +1226,7 @@
           "1546921152681": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-2-compressor.jpg",
+              "image": "shopify://shop_images/brand-2-compressor.jpg",
               "title": "Isablella",
               "link": ""
             }
@@ -1225,7 +1234,7 @@
           "1546921217742": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-3-compressor.jpg",
+              "image": "shopify://shop_images/brand-3-compressor.jpg",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -1233,7 +1242,7 @@
           "1546921256644": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-4-compressor.jpg",
+              "image": "shopify://shop_images/brand-4-compressor.jpg",
               "title": "Fermends",
               "link": ""
             }
@@ -1241,7 +1250,7 @@
           "1546921290795": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-5-compressor.jpg",
+              "image": "shopify://shop_images/brand-5-compressor.jpg",
               "title": "conseqaur",
               "link": ""
             }
@@ -1249,7 +1258,7 @@
           "1546921315910": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/brand-3-compressor.jpg",
+              "image": "shopify://shop_images/brand-3-compressor.jpg",
               "title": "Benjamin Button",
               "link": ""
             }
@@ -1271,14 +1280,14 @@
         "type": "contact-template",
         "settings": {
           "display_google_map": true,
-          "google_map_code": "<iframe src=\"https:\/\/maps.google.com\/maps?f=q&source=s_q&hl=vi&geocode=&q=4+Nguy%E1%BB%85n+%C4%90%C3%ACnh+chi%E1%BB%83u,+%C4%90a+Kao,+Qu%E1%BA%ADn+1&aq=&sll=37.0625,-95.677068&sspn=41.903538,86.572266&ie=UTF8&hq=&hnear=4+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+%C4%90a+Kao,+Qu%E1%BA%ADn+1,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam&t=m&ll=10.797518,106.700377&spn=0.014754,0.071197&z=15&iwloc=A&output=embed\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" width=\"100%\" height=\"350\"><\/iframe>",
+          "google_map_code": "<iframe src=\"https://maps.google.com/maps?f=q&source=s_q&hl=vi&geocode=&q=4+Nguy%E1%BB%85n+%C4%90%C3%ACnh+chi%E1%BB%83u,+%C4%90a+Kao,+Qu%E1%BA%ADn+1&aq=&sll=37.0625,-95.677068&sspn=41.903538,86.572266&ie=UTF8&hq=&hnear=4+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+%C4%90a+Kao,+Qu%E1%BA%ADn+1,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam&t=m&ll=10.797518,106.700377&spn=0.014754,0.071197&z=15&iwloc=A&output=embed\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" width=\"100%\" height=\"350\"></iframe>",
           "contact_title": "DROP US A LINE | Schreiben Sie uns",
           "contact_text_desc": "Have a question or comment? Use the form below to send us a message or contact us by mail at:",
           "contact_your_name": "",
           "contact_phone_number": "",
           "contact_your_email": "",
           "display_location": true,
-          "location_code": "<h4>Store Information<\/h4>\n<p>We'd love to hear from you - please use the form to send us your message or ideas. Or simply pop in for a cup of fresh tea and a cookie:<\/p>\n<p class=\"addr\">8808 Ave Dermentum, Onsectetur Adipiscing<br>Tortor Sagittis, CA 880986,<br>United States\n<\/p>\n\n<p class=\"addr\">Email: <a href=\"mailto:email@domain.com\">email@domain.com<\/a><br>Toll-free: <strong>1-888-699-8900<\/strong><\/p><div class=\"open-hours\">\n<strong>Opening Hours:<\/strong>\n<br>Monday to Saturday: 9am - 10pm\n<br>Sundays: 10am - 6pm\n<p><\/p>\n<\/div>"
+          "location_code": "<h4>Store Information</h4>\n<p>We'd love to hear from you - please use the form to send us your message or ideas. Or simply pop in for a cup of fresh tea and a cookie:</p>\n<p class=\"addr\">8808 Ave Dermentum, Onsectetur Adipiscing<br>Tortor Sagittis, CA 880986,<br>United States\n</p>\n\n<p class=\"addr\">Email: <a href=\"mailto:email@domain.com\">email@domain.com</a><br>Toll-free: <strong>1-888-699-8900</strong></p><div class=\"open-hours\">\n<strong>Opening Hours:</strong>\n<br>Monday to Saturday: 9am - 10pm\n<br>Sundays: 10am - 6pm\n<p></p>\n</div>"
         }
       },
       "faq-page": {
@@ -1378,10 +1387,10 @@
           "1507879632829"
         ],
         "settings": {
-          "des_faqs": "Below FAQ are some common concerns of our clients before purchasing the theme, if you have other questions, please just send it to <a href=\"mailto:email@domain.com\" target=\"_blank\">email@domain.com<\/a>",
+          "des_faqs": "Below FAQ are some common concerns of our clients before purchasing the theme, if you have other questions, please just send it to <a href=\"mailto:email@domain.com\" target=\"_blank\">email@domain.com</a>",
           "contact_text": "Unable to find satisfactory answers ?",
           "contact_link_text": "Contact Support",
-          "contact_link": "https:\/\/www.halothemes.com\/",
+          "contact_link": "https://www.halothemes.com/",
           "icon_faqs": "Question",
           "bg_icon_qs": "#ef6454",
           "color_icon_qs": "#ffffff",
@@ -1481,10 +1490,10 @@
           "payment_display_sage": false,
           "payment_display_wallet": false,
           "payment_display_western": false,
-          "icon_visa": "shopify:\/\/shop_images\/payment-1_x32_b9d73e05-7350-48ec-83ac-54b389a087ff.png",
-          "icon_master": "shopify:\/\/shop_images\/payment-2_x32_9ad2455b-701a-4127-9d37-a942a61fb447.png",
-          "icon_american_express": "shopify:\/\/shop_images\/payment-3_x32_c6a35c55-bde8-44ca-9aa6-01d792f1f0ca.png",
-          "icon_paypal": "shopify:\/\/shop_images\/paypal_62fd7559-dd90-4b07-adab-b4a977942ecd_x32_1.png"
+          "icon_visa": "shopify://shop_images/payment-1_x32_b9d73e05-7350-48ec-83ac-54b389a087ff.png",
+          "icon_master": "shopify://shop_images/payment-2_x32_9ad2455b-701a-4127-9d37-a942a61fb447.png",
+          "icon_american_express": "shopify://shop_images/payment-3_x32_c6a35c55-bde8-44ca-9aa6-01d792f1f0ca.png",
+          "icon_paypal": "shopify://shop_images/paypal_62fd7559-dd90-4b07-adab-b4a977942ecd_x32_1.png"
         }
       },
       "footer-2": {
@@ -1589,7 +1598,7 @@
           "4fe90d66-b4b3-44cb-9f7b-2ec2b08111f4": {
             "type": "info_store",
             "settings": {
-              "footer_logo": "shopify:\/\/shop_images\/PAINTLAB_logo_web__no_brush_-03.png",
+              "footer_logo": "shopify://shop_images/PAINTLAB_logo_web__no_brush_-03.png",
               "footer_info_store": "685 Market Street\nSan Francisco, CA 94105,\nUnited States\n<br><br>\nCall us at: 1-888-699-8900<br>\nEmail: email@domain.com"
             }
           },
@@ -1759,13 +1768,13 @@
           "64f63af5-fd5e-43a9-be2e-a62046152d33": {
             "type": "info_store",
             "settings": {
-              "footer_logo": "shopify:\/\/shop_images\/PAINTLAB_logo_web__no_brush_-03.png",
-              "info_icon_1": "<i class=\"fa fa-map-marker\" aria-hidden=\"true\"><\/i>",
-              "info_text_1": "<a href=\"https:\/\/www.google.com\/maps\/place\/paintlab.ie\/@53.3153438,-6.3460401,17z\/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu\">Unit D1, Ballymount Dr, Ballymount Industrial Estate, Dublin, D12 CY99, Ireland<\/a>",
-              "info_icon_2": "<i class=\"fa fa-phone\" aria-hidden=\"true\"><\/i>",
-              "info_text_2": "Call us: <a href=\"tel:+353015733222\" style=\"text-decoration:underline;\">+353 1 573 3222<\/a>",
-              "info_icon_3": "<i class=\"fa fa-envelope-o\"><\/i>",
-              "info_text_3": "Email: <a href=\"mailto:info@paintlab.ie\" target=\"_blank\">info@paintlab.ie<\/a>",
+              "footer_logo": "shopify://shop_images/PAINTLAB_logo_web__no_brush_-03.png",
+              "info_icon_1": "<i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>",
+              "info_text_1": "<a href=\"https://www.google.com/maps/place/paintlab.ie/@53.3153438,-6.3460401,17z/data=!4m6!3m5!1s0x48679d3aac06fdf3:0x7694a309a1c453e0!8m2!3d53.3153438!4d-6.3434652!16s%2Fg%2F11rv0bkbsf?entry=ttu\">Unit D1, Ballymount Dr, Ballymount Industrial Estate, Dublin, D12 CY99, Ireland</a>",
+              "info_icon_2": "<i class=\"fa fa-phone\" aria-hidden=\"true\"></i>",
+              "info_text_2": "Call us: <a href=\"tel:+353015733222\" style=\"text-decoration:underline;\">+353 1 573 3222</a>",
+              "info_icon_3": "<i class=\"fa fa-envelope-o\"></i>",
+              "info_text_3": "Email: <a href=\"mailto:info@paintlab.ie\" target=\"_blank\">info@paintlab.ie</a>",
               "footer_social_enable": true,
               "footer_typography_label": true
             }
@@ -1797,7 +1806,7 @@
           "newsletter_border_color": "#ffffff",
           "bg_newsletter_button_color": "#ffffff",
           "newsletter_button_color": "#282323",
-          "guarantee_img": "shopify:\/\/shop_images\/trust_800x_45b63f7c-f3f0-4e29-88b1-6aa77ac73f34.png",
+          "guarantee_img": "shopify://shop_images/trust_800x_45b63f7c-f3f0-4e29-88b1-6aa77ac73f34.png",
           "bg_footer_bottom_color": "#000000",
           "footer_bottom_color": "#eaeaea",
           "footer_address_code": "© 2022 Paintlablimited. All Rights Reserved. VAT: IE3684974RH",
@@ -1826,10 +1835,10 @@
           "payment_display_sage": false,
           "payment_display_wallet": false,
           "payment_display_western": false,
-          "icon_visa": "shopify:\/\/shop_images\/payment-1_x32_b9d73e05-7350-48ec-83ac-54b389a087ff.png",
-          "icon_master": "shopify:\/\/shop_images\/payment-2_x32_9ad2455b-701a-4127-9d37-a942a61fb447.png",
-          "icon_american_express": "shopify:\/\/shop_images\/payment-3_x32_c6a35c55-bde8-44ca-9aa6-01d792f1f0ca.png",
-          "icon_paypal": "shopify:\/\/shop_images\/paypal_62fd7559-dd90-4b07-adab-b4a977942ecd_x32_1.png"
+          "icon_visa": "shopify://shop_images/payment-1_x32_b9d73e05-7350-48ec-83ac-54b389a087ff.png",
+          "icon_master": "shopify://shop_images/payment-2_x32_9ad2455b-701a-4127-9d37-a942a61fb447.png",
+          "icon_american_express": "shopify://shop_images/payment-3_x32_c6a35c55-bde8-44ca-9aa6-01d792f1f0ca.png",
+          "icon_paypal": "shopify://shop_images/paypal_62fd7559-dd90-4b07-adab-b4a977942ecd_x32_1.png"
         }
       },
       "footer-6": {
@@ -2130,7 +2139,7 @@
         "type": "header",
         "settings": {
           "display_header_top": true,
-          "top_message_text": "Mid-Season Sale Up to 70% OFF. <a href=\"\/collections\/all\">Shop Now<\/a>",
+          "top_message_text": "Mid-Season Sale Up to 70% OFF. <a href=\"/collections/all\">Shop Now</a>",
           "bg_header_top": "#ffe8e8",
           "text_header_top_color": "#b05d5d",
           "brand_type": "image",
@@ -2331,7 +2340,7 @@
         "type": "header-06",
         "settings": {
           "display_header_top": true,
-          "customer_service_text": "Available 24\/7 at <a href=\"tel:(018)%20900-6690\/\">(018) 900-6690<\/a>",
+          "customer_service_text": "Available 24/7 at <a href=\"tel:(018)%20900-6690/\">(018) 900-6690</a>",
           "font_size_content_2": "11px",
           "bg_header_top": "#ffe8e8",
           "text_header_top_color": "#ffffff",
@@ -2413,9 +2422,9 @@
           "brand_text": "",
           "logo_max_width": 100,
           "logo_text_color": "#ffffff",
-          "logo_pc": "shopify:\/\/shop_images\/PAINTLAB_logo-SAND.png",
+          "logo_pc": "shopify://shop_images/PAINTLAB_logo-SAND.png",
           "max_height_logo_pc": "150px",
-          "logo": "shopify:\/\/shop_images\/PAINTLAB_logo-SAND.png",
+          "logo": "shopify://shop_images/PAINTLAB_logo-SAND.png",
           "max_height_logo_mb": "100px",
           "bg_header_bottom_color": "#202020",
           "header_bottom_link_color": "#ffffff",
@@ -2515,7 +2524,7 @@
         "settings": {
           "display_header_top": true,
           "top_message_text": "Mid-Season Sale up to 70% Off. End Ins:",
-          "countdown": "2020\/01\/7 0:0:00",
+          "countdown": "2020/01/7 0:0:00",
           "bg_header_top": "#e95144",
           "text_header_top_color": "#ffffff",
           "bg_header_count_down": "#f7f8fa",
@@ -2616,7 +2625,7 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/lookbook-1-compressor.jpg",
+              "image_slide": "shopify://shop_images/lookbook-1-compressor.jpg",
               "alignment": "left",
               "heading": "",
               "font_size_heading": "40px",
@@ -2653,7 +2662,7 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/lookbook-2-compressor.jpg",
+              "image_slide": "shopify://shop_images/lookbook-2-compressor.jpg",
               "alignment": "left",
               "heading": "",
               "font_size_heading": "40px",
@@ -2690,7 +2699,7 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/lookbook-3-compressor.jpg",
+              "image_slide": "shopify://shop_images/lookbook-3-compressor.jpg",
               "alignment": "left",
               "heading": "",
               "font_size_heading": "40px",
@@ -2733,7 +2742,7 @@
           "display_product_detail_share": true,
           "share_text": "Share",
           "button": "Shop LookBook",
-          "link": "shopify:\/\/collections\/all",
+          "link": "shopify://collections/all",
           "autoplay": false,
           "speed": "5000",
           "transition": "true",
@@ -2752,16 +2761,16 @@
               "megamenu_items_1": "Trend",
               "title_featured_product": "Featured Products",
               "featured_product": "dinterdum-pretium-condimento-1",
-              "link_banner_first_style_1": "shopify:\/\/collections\/all"
+              "link_banner_first_style_1": "shopify://collections/all"
             }
           },
           "1542772636356": {
             "type": "style_2",
             "settings": {
               "megamenu_items_2": "New In",
-              "link_banner_first_style_2": "shopify:\/\/collections\/cosmopolis",
-              "link_banner_second_style_2": "shopify:\/\/collections\/all",
-              "link_banner_third_style_2": "shopify:\/\/collections\/suito"
+              "link_banner_first_style_2": "shopify://collections/cosmopolis",
+              "link_banner_second_style_2": "shopify://collections/all",
+              "link_banner_third_style_2": "shopify://collections/suito"
             }
           },
           "1542783537505": {
@@ -2984,27 +2993,27 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "Trade Paint",
-              "banner_first_style_3": "shopify:\/\/shop_images\/Painting_Set_for_Log_Cabin_Exteriors.png",
-              "link_banner_first_style_3": "shopify:\/\/collections\/painting-made-easy",
-              "banner_second_style_3": "shopify:\/\/shop_images\/tikkurila_optiva_matt5_9L_1_dd405e6d-0788-4257-8816-f5ce3e2487d2.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/interior-paint",
-              "banner_third_style_3": "shopify:\/\/shop_images\/tikkurila_finngard_silicone_protect_9L_2_ba7bfc82-c9ec-42a4-9b10-1536e058ae05.png",
-              "link_banner_third_style_3": "shopify:\/\/pages\/exterior",
-              "banner_four_style_3": "shopify:\/\/shop_images\/img_606de066319fb_2f78110c-f328-4f1e-b83a-0ee7d2ada0f3.png",
-              "link_banner_four_style_3": "shopify:\/\/pages\/spray-paint",
-              "banner_five_style_3": "shopify:\/\/shop_images\/Tikkurila-muuri-heat-resistant-paint-for-interior-fireplaces-and-firewalls.png",
-              "link_banner_five_style_3": "shopify:\/\/collections\/heat-resistant-paints",
-              "banner_six_style_3": "shopify:\/\/shop_images\/Floetrol_1L.png",
-              "link_banner_six_style_3": "shopify:\/\/collections\/paint-conditioner",
-              "banner_seven_style_3": "shopify:\/\/shop_images\/630225-1024x558.png",
-              "link_banner_seven_style_3": "shopify:\/\/collections\/paint-accessories",
+              "banner_first_style_3": "shopify://shop_images/Painting_Set_for_Log_Cabin_Exteriors.png",
+              "link_banner_first_style_3": "shopify://collections/painting-made-easy",
+              "banner_second_style_3": "shopify://shop_images/tikkurila_optiva_matt5_9L_1_dd405e6d-0788-4257-8816-f5ce3e2487d2.png",
+              "link_banner_second_style_3": "shopify://pages/interior-paint",
+              "banner_third_style_3": "shopify://shop_images/tikkurila_finngard_silicone_protect_9L_2_ba7bfc82-c9ec-42a4-9b10-1536e058ae05.png",
+              "link_banner_third_style_3": "shopify://pages/exterior",
+              "banner_four_style_3": "shopify://shop_images/img_606de066319fb_2f78110c-f328-4f1e-b83a-0ee7d2ada0f3.png",
+              "link_banner_four_style_3": "shopify://pages/spray-paint",
+              "banner_five_style_3": "shopify://shop_images/Tikkurila-muuri-heat-resistant-paint-for-interior-fireplaces-and-firewalls.png",
+              "link_banner_five_style_3": "shopify://collections/heat-resistant-paints",
+              "banner_six_style_3": "shopify://shop_images/Floetrol_1L.png",
+              "link_banner_six_style_3": "shopify://collections/paint-conditioner",
+              "banner_seven_style_3": "shopify://shop_images/630225-1024x558.png",
+              "link_banner_seven_style_3": "shopify://collections/paint-accessories",
               "link_banner_eight_style_3": "",
               "link_banner_nine_style_3": "",
               "link_banner_ten_style_3": "",
               "link_banner_eleven_style_3": "",
               "link_banner_twelve_style_3": "",
               "link_banner_thirteen_style_3": "",
-              "link_banner_fourteen_style_3": "shopify:\/\/collections\/paint-varnish-removers",
+              "link_banner_fourteen_style_3": "shopify://collections/paint-varnish-removers",
               "link_banner_fifteen_style_3": ""
             }
           },
@@ -3012,10 +3021,10 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "Industrial Paint",
-              "banner_first_style_3": "shopify:\/\/shop_images\/Juno-Junoretano-Polyurethane.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/industrial-topcoats",
-              "banner_second_style_3": "shopify:\/\/shop_images\/Imprimacion-Primer-DYNALINE-WEB.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/industrial-primers",
+              "banner_first_style_3": "shopify://shop_images/Juno-Junoretano-Polyurethane.png",
+              "link_banner_first_style_3": "shopify://pages/industrial-topcoats",
+              "banner_second_style_3": "shopify://shop_images/Imprimacion-Primer-DYNALINE-WEB.png",
+              "link_banner_second_style_3": "shopify://pages/industrial-primers",
               "link_banner_third_style_3": "",
               "link_banner_four_style_3": "",
               "link_banner_five_style_3": "",
@@ -3035,10 +3044,10 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "Woodcare & Treatments",
-              "banner_first_style_3": "shopify:\/\/shop_images\/OSMO_Natural_Oil_Woodstain.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/exterior-stain-oil",
-              "banner_second_style_3": "shopify:\/\/shop_images\/TopOil-removebg_1d4b2c47-84dd-4bdb-8388-dca020be4cfe.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/interior-wood-care",
+              "banner_first_style_3": "shopify://shop_images/OSMO_Natural_Oil_Woodstain.png",
+              "link_banner_first_style_3": "shopify://pages/exterior-stain-oil",
+              "banner_second_style_3": "shopify://shop_images/TopOil-removebg_1d4b2c47-84dd-4bdb-8388-dca020be4cfe.png",
+              "link_banner_second_style_3": "shopify://pages/interior-wood-care",
               "link_banner_third_style_3": "",
               "link_banner_four_style_3": "",
               "link_banner_five_style_3": "",
@@ -3058,16 +3067,16 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "ROLLING & BRUSHING",
-              "banner_first_style_3": "shopify:\/\/shop_images\/Oldfields-Pro-Series-Flat-Sash-Wall-Brushes.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/paint-brushes",
-              "banner_second_style_3": "shopify:\/\/shop_images\/OldfieldsProSeries12-18_AdjustablePaintRollerFrame.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/paint-roller-frames",
-              "banner_third_style_3": "shopify:\/\/shop_images\/9_OldfieldsProSeriesMicro-maxRollerSleeve10mmNap.png",
-              "link_banner_third_style_3": "shopify:\/\/pages\/roller-sleeves",
-              "banner_four_style_3": "shopify:\/\/shop_images\/BR412-21_Big_Ben_Tray-removebg.png",
-              "link_banner_four_style_3": "shopify:\/\/pages\/paint-buckets-trays",
-              "banner_five_style_3": "shopify:\/\/shop_images\/EXTENSION_POLES_m.png",
-              "link_banner_five_style_3": "shopify:\/\/pages\/rolling-accessories",
+              "banner_first_style_3": "shopify://shop_images/Oldfields-Pro-Series-Flat-Sash-Wall-Brushes.png",
+              "link_banner_first_style_3": "shopify://pages/paint-brushes",
+              "banner_second_style_3": "shopify://shop_images/OldfieldsProSeries12-18_AdjustablePaintRollerFrame.png",
+              "link_banner_second_style_3": "shopify://pages/paint-roller-frames",
+              "banner_third_style_3": "shopify://shop_images/9_OldfieldsProSeriesMicro-maxRollerSleeve10mmNap.png",
+              "link_banner_third_style_3": "shopify://pages/roller-sleeves",
+              "banner_four_style_3": "shopify://shop_images/BR412-21_Big_Ben_Tray-removebg.png",
+              "link_banner_four_style_3": "shopify://pages/paint-buckets-trays",
+              "banner_five_style_3": "shopify://shop_images/EXTENSION_POLES_m.png",
+              "link_banner_five_style_3": "shopify://pages/rolling-accessories",
               "link_banner_six_style_3": "",
               "link_banner_seven_style_3": "",
               "link_banner_eight_style_3": "",
@@ -3084,20 +3093,20 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "PREP & CLEANING",
-              "banner_first_style_3": "shopify:\/\/shop_images\/multi_surface_landing-2123a289e2-removebg-preview_1.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/masking",
-              "banner_second_style_3": "shopify:\/\/shop_images\/Anza-Hammerhead-Scraper-Tool.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/preparation",
-              "banner_third_style_3": "shopify:\/\/shop_images\/3-1800-500x500jpg-removebg-preview_3f21044d-f6a1-4eba-8ef8-f8fd6e6a97c8.png",
-              "link_banner_third_style_3": "shopify:\/\/pages\/cleaning",
-              "banner_four_style_3": "shopify:\/\/shop_images\/Mirka-Handy-Sanding-Block-With-Extraction-80-230.png",
-              "link_banner_four_style_3": "shopify:\/\/pages\/hand-sanding",
-              "banner_five_style_3": "shopify:\/\/shop_images\/Festool-Hand-Sander.png",
-              "link_banner_five_style_3": "shopify:\/\/pages\/electric-sanders-extractors",
-              "banner_six_style_3": "shopify:\/\/shop_images\/toupret_quick_dry_filler_1kg-ttreb901gb-removebg-preview.png",
-              "link_banner_six_style_3": "shopify:\/\/pages\/fillers-sealants-1",
-              "banner_seven_style_3": "shopify:\/\/shop_images\/WolfcraftMG550CaulkingGun.png",
-              "link_banner_seven_style_3": "shopify:\/\/pages\/filling-sealing-accessories",
+              "banner_first_style_3": "shopify://shop_images/multi_surface_landing-2123a289e2-removebg-preview_1.png",
+              "link_banner_first_style_3": "shopify://pages/masking-protection",
+              "banner_second_style_3": "shopify://shop_images/Anza-Hammerhead-Scraper-Tool.png",
+              "link_banner_second_style_3": "shopify://pages/preparation",
+              "banner_third_style_3": "shopify://shop_images/3-1800-500x500jpg-removebg-preview_3f21044d-f6a1-4eba-8ef8-f8fd6e6a97c8.png",
+              "link_banner_third_style_3": "shopify://pages/cleaning",
+              "banner_four_style_3": "shopify://shop_images/Mirka-Handy-Sanding-Block-With-Extraction-80-230.png",
+              "link_banner_four_style_3": "shopify://pages/hand-sanding",
+              "banner_five_style_3": "shopify://shop_images/Festool-Hand-Sander.png",
+              "link_banner_five_style_3": "shopify://pages/electric-sanders-extractors",
+              "banner_six_style_3": "shopify://shop_images/toupret_quick_dry_filler_1kg-ttreb901gb-removebg-preview.png",
+              "link_banner_six_style_3": "shopify://pages/fillers-sealants-1",
+              "banner_seven_style_3": "shopify://shop_images/WolfcraftMG550CaulkingGun.png",
+              "link_banner_seven_style_3": "shopify://pages/filling-sealing-accessories",
               "link_banner_eight_style_3": "",
               "link_banner_nine_style_3": "",
               "link_banner_ten_style_3": "",
@@ -3112,12 +3121,12 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "SPRAYING",
-              "banner_first_style_3": "shopify:\/\/shop_images\/Apollo-Precision.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/spraying-machines",
-              "banner_second_style_3": "shopify:\/\/shop_images\/Apollo.png",
-              "link_banner_second_style_3": "shopify:\/\/pages\/spray-guns",
-              "banner_third_style_3": "shopify:\/\/shop_images\/Graco_Gun_Filter.png",
-              "link_banner_third_style_3": "shopify:\/\/pages\/consumables",
+              "banner_first_style_3": "shopify://shop_images/Apollo-Precision.png",
+              "link_banner_first_style_3": "shopify://pages/spraying-machines",
+              "banner_second_style_3": "shopify://shop_images/Apollo.png",
+              "link_banner_second_style_3": "shopify://pages/spray-guns",
+              "banner_third_style_3": "shopify://shop_images/Graco_Gun_Filter.png",
+              "link_banner_third_style_3": "shopify://pages/consumables",
               "link_banner_four_style_3": "",
               "link_banner_five_style_3": "",
               "link_banner_six_style_3": "",
@@ -3136,20 +3145,20 @@
             "type": "style_3",
             "settings": {
               "megamenu_items_3": "WORKWEAR",
-              "banner_first_style_3": "shopify:\/\/shop_images\/3m-full-facepiece-resuable-respirator-6800-removebg-preview_127fc873-4466-414d-8597-e1bdd7af4fc5.png",
-              "link_banner_first_style_3": "shopify:\/\/collections\/face-masks-eye-protection",
-              "banner_second_style_3": "shopify:\/\/shop_images\/2801-0900.jpg_Original_637293299144500000-removebg-preview_30729cb8-0ab3-4ce8-8ca5-fedcee240aa9.png",
-              "link_banner_second_style_3": "shopify:\/\/collections\/shirts-hoodies",
-              "banner_third_style_3": "shopify:\/\/shop_images\/1549-0904.jpg_Original_637292734288130000-removebg-preview_b7b18d57-136a-4ce2-bd2d-b30f797986fb.png",
-              "link_banner_third_style_3": "shopify:\/\/collections\/jackets",
-              "banner_four_style_3": "shopify:\/\/shop_images\/98673-21-overall-removebg-preview.png",
-              "link_banner_four_style_3": "shopify:\/\/collections\/coveralls",
-              "banner_five_style_3": "shopify:\/\/shop_images\/6241-0904.jpg_Original_637293320648370000-removebg.png",
-              "link_banner_five_style_3": "shopify:\/\/collections\/trousers-shorts",
-              "banner_six_style_3": "shopify:\/\/shop_images\/maxifoam_34_800_2018_07_hr_f6f8fb4a-e0fd-4ece-a6cb-4f1ec573c93e.png",
-              "link_banner_six_style_3": "shopify:\/\/collections\/gloves-1",
-              "banner_seven_style_3": "shopify:\/\/shop_images\/pouches-bags.png",
-              "link_banner_seven_style_3": "shopify:\/\/collections\/pouches-bags",
+              "banner_first_style_3": "shopify://shop_images/3m-full-facepiece-resuable-respirator-6800-removebg-preview_127fc873-4466-414d-8597-e1bdd7af4fc5.png",
+              "link_banner_first_style_3": "shopify://collections/face-masks-eye-protection",
+              "banner_second_style_3": "shopify://shop_images/2801-0900.jpg_Original_637293299144500000-removebg-preview_30729cb8-0ab3-4ce8-8ca5-fedcee240aa9.png",
+              "link_banner_second_style_3": "shopify://collections/shirts-hoodies",
+              "banner_third_style_3": "shopify://shop_images/1549-0904.jpg_Original_637292734288130000-removebg-preview_b7b18d57-136a-4ce2-bd2d-b30f797986fb.png",
+              "link_banner_third_style_3": "shopify://collections/jackets",
+              "banner_four_style_3": "shopify://shop_images/98673-21-overall-removebg-preview.png",
+              "link_banner_four_style_3": "shopify://collections/coveralls",
+              "banner_five_style_3": "shopify://shop_images/6241-0904.jpg_Original_637293320648370000-removebg.png",
+              "link_banner_five_style_3": "shopify://collections/trousers-shorts",
+              "banner_six_style_3": "shopify://shop_images/maxifoam_34_800_2018_07_hr_f6f8fb4a-e0fd-4ece-a6cb-4f1ec573c93e.png",
+              "link_banner_six_style_3": "shopify://collections/gloves-1",
+              "banner_seven_style_3": "shopify://shop_images/pouches-bags.png",
+              "link_banner_seven_style_3": "shopify://collections/pouches-bags",
               "link_banner_eight_style_3": "",
               "link_banner_nine_style_3": "",
               "link_banner_ten_style_3": "",
@@ -3165,26 +3174,26 @@
             "disabled": true,
             "settings": {
               "megamenu_items_3": "Cleaning & Preparation",
-              "banner_first_style_3": "shopify:\/\/shop_images\/cleaning-pic.png",
-              "link_banner_first_style_3": "shopify:\/\/pages\/cleaning-preparation",
-              "banner_second_style_3": "shopify:\/\/shop_images\/wallpaper-tool.png",
-              "link_banner_second_style_3": "shopify:\/\/collections\/wallpaper-tools-accessories",
-              "banner_third_style_3": "shopify:\/\/shop_images\/knives-blades.png",
-              "link_banner_third_style_3": "shopify:\/\/collections\/knives-blades",
-              "banner_four_style_3": "shopify:\/\/shop_images\/paint-strainer.png",
-              "link_banner_four_style_3": "shopify:\/\/collections\/paint-strainers",
-              "banner_five_style_3": "shopify:\/\/shop_images\/wire-brushes-pic.png",
-              "link_banner_five_style_3": "shopify:\/\/collections\/wire-brushes",
-              "banner_six_style_3": "shopify:\/\/shop_images\/Paint_Stirrers_Mixers.png",
-              "link_banner_six_style_3": "shopify:\/\/collections\/paint-stirrers-mixers",
-              "banner_seven_style_3": "shopify:\/\/shop_images\/barrier_tape_75mm_x100m_red-removebg-preview.png",
-              "link_banner_seven_style_3": "shopify:\/\/collections\/safety",
-              "banner_eight_style_3": "shopify:\/\/shop_images\/Q1_-Systainer-MT187_04_580x435-removebg.png",
-              "link_banner_eight_style_3": "shopify:\/\/collections\/tool-storage",
-              "banner_nine_style_3": "shopify:\/\/shop_images\/4044899651017_500x0.500x0-removebg.png",
-              "link_banner_nine_style_3": "shopify:\/\/collections\/mixing-buckets",
-              "banner_ten_style_3": "shopify:\/\/shop_images\/barrettine-woodworm-killer-spray-500ml.png",
-              "link_banner_ten_style_3": "shopify:\/\/collections\/wood-cleaning-care",
+              "banner_first_style_3": "shopify://shop_images/cleaning-pic.png",
+              "link_banner_first_style_3": "shopify://pages/cleaning-preparation",
+              "banner_second_style_3": "shopify://shop_images/wallpaper-tool.png",
+              "link_banner_second_style_3": "shopify://collections/wallpaper-tools-accessories",
+              "banner_third_style_3": "shopify://shop_images/knives-blades.png",
+              "link_banner_third_style_3": "shopify://collections/knives-blades",
+              "banner_four_style_3": "shopify://shop_images/paint-strainer.png",
+              "link_banner_four_style_3": "shopify://collections/paint-strainers",
+              "banner_five_style_3": "shopify://shop_images/wire-brushes-pic.png",
+              "link_banner_five_style_3": "shopify://collections/wire-brushes",
+              "banner_six_style_3": "shopify://shop_images/Paint_Stirrers_Mixers.png",
+              "link_banner_six_style_3": "shopify://collections/paint-stirrers-mixers",
+              "banner_seven_style_3": "shopify://shop_images/barrier_tape_75mm_x100m_red-removebg-preview.png",
+              "link_banner_seven_style_3": "shopify://collections/safety",
+              "banner_eight_style_3": "shopify://shop_images/Q1_-Systainer-MT187_04_580x435-removebg.png",
+              "link_banner_eight_style_3": "shopify://collections/tool-storage",
+              "banner_nine_style_3": "shopify://shop_images/4044899651017_500x0.500x0-removebg.png",
+              "link_banner_nine_style_3": "shopify://collections/mixing-buckets",
+              "banner_ten_style_3": "shopify://shop_images/barrettine-woodworm-killer-spray-500ml.png",
+              "link_banner_ten_style_3": "shopify://collections/wood-cleaning-care",
               "link_banner_eleven_style_3": "",
               "link_banner_twelve_style_3": "",
               "link_banner_thirteen_style_3": "",
@@ -3205,7 +3214,7 @@
         ],
         "settings": {
           "display_fixtop_menu": true,
-          "logo_fix": "shopify:\/\/shop_images\/PAINTLAB_logo_web__no_brush_-03.png",
+          "logo_fix": "shopify://shop_images/PAINTLAB_logo_web__no_brush_-03.png",
           "horizontal_linklist": "main-menu",
           "text_help": "",
           "text_help_link": "",
@@ -3380,17 +3389,17 @@
           "brand_type": "image",
           "brand_text": "",
           "brand_text_color": "#000000",
-          "logo_pc": "shopify:\/\/shop_images\/PAINTLAB_logo_web__no_brush_-03.png",
+          "logo_pc": "shopify://shop_images/PAINTLAB_logo_web__no_brush_-03.png",
           "max_height_logo_pc": "44px",
           "max_height_logo_mb": "25px",
           "access_lable": "Early Access Login",
           "access_lable_color": "#ffffff",
-          "banner": "shopify:\/\/shop_images\/paintlab-products_6_dcad642c-c782-4353-a1a8-73713476b029.jpg",
+          "banner": "shopify://shop_images/paintlab-products_6_dcad642c-c782-4353-a1a8-73713476b029.jpg",
           "overlay_color": "#422011",
           "overlay_opacity": "0.15",
           "heading": "<br>Our New Store Will Be  Opening Soon",
           "heading_size": "30",
-          "subtitle": "Apologies for any inconvenience, we are currenlty moving to the new platform and will reopen soon.\n<br><br>\nBest wishes,<br>\n<b>paintlab.ie<\/b>",
+          "subtitle": "Apologies for any inconvenience, we are currenlty moving to the new platform and will reopen soon.\n<br><br>\nBest wishes,<br>\n<b>paintlab.ie</b>",
           "subtitle_size": "16",
           "backbround_color": "#ffffff",
           "text_color": "#000000",
@@ -3413,7 +3422,7 @@
         "settings": {
           "title": "Shop Instagram",
           "des": "Nullam aliquet vestibulum augue non varius cras de congue elitos. Duis tristique delos ante an daliquam. Praesent urna tellus laoreet an tellus ullamcorper fermentum facilisis.",
-          "embed_code": "<script src=\"https:\/\/snapppt.com\/widgets\/widget_loader\/33732d63-5077-4f49-a869-7d4ddc227b6f\/grid.js\" defer class=\"snapppt-widget\"><\/script>"
+          "embed_code": "<script src=\"https://snapppt.com/widgets/widget_loader/33732d63-5077-4f49-a869-7d4ddc227b6f/grid.js\" defer class=\"snapppt-widget\"></script>"
         }
       },
       "someone-purchased": {
@@ -3536,32 +3545,13 @@
     ],
     "blocks": {
       "1513253815146976218": {
-        "type": "shopify:\/\/apps\/omnisend-email-marketing-sms\/blocks\/app-embed\/44704aa2-794f-4c5d-8c8e-039c841158e9",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "9776720720251544092": {
-        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
-        "disabled": false,
-        "settings": {
-          "registration_form_id": "",
-          "edit_account_form_id": "",
-          "edit_account_link_text": "Edit account",
-          "edit_account_heading": "Edit account",
-          "edit_account_back_link_text": "Back to account",
-          "enable_js_api": false,
-          "js_api_version": ""
-        }
-      },
-      "16865981829950876834": {
-        "type": "shopify:\/\/apps\/icart-cart-drawer-cart-upsell\/blocks\/icart-block\/e651bbc2-5760-47d8-a513-2aa6ee3a9aa7",
+        "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
         "disabled": false,
         "settings": {
         }
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#202a36",
@@ -3605,7 +3595,7 @@
       "enable_quick_view": true,
       "enable_wishlist": true,
       "link_color": "#0688e2",
-      "mailing_list_form_action": "\/\/halothemes.us3.list-manage.com\/subscribe\/post?u=0bf85dc81d846feb53a235178&amp;id=89ea28643a",
+      "mailing_list_form_action": "//halothemes.us3.list-manage.com/subscribe/post?u=0bf85dc81d846feb53a235178&amp;id=89ea28643a",
       "page_title_color": "#232323",
       "page_title_text_align": "left",
       "popup_newsletter_title": "Join Our Mailing List",
