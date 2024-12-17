@@ -1295,78 +1295,63 @@
         "blocks": {
           "1507878888245": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879452149": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879511326": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879518615": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879528740": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879543697": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879557094": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879567640": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879577808": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879582861": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879597073": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879608326": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879613494": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879626512": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           },
           "1507879632829": {
             "type": "text",
-            "settings": {
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -2996,7 +2981,7 @@
               "banner_first_style_3": "shopify://shop_images/Painting_Set_for_Log_Cabin_Exteriors.png",
               "link_banner_first_style_3": "shopify://collections/painting-made-easy",
               "banner_second_style_3": "shopify://shop_images/tikkurila_optiva_matt5_9L_1_dd405e6d-0788-4257-8816-f5ce3e2487d2.png",
-              "link_banner_second_style_3": "shopify://pages/interior-paint",
+              "link_banner_second_style_3": "shopify://pages/interior-paint-primers",
               "banner_third_style_3": "shopify://shop_images/tikkurila_finngard_silicone_protect_9L_2_ba7bfc82-c9ec-42a4-9b10-1536e058ae05.png",
               "link_banner_third_style_3": "shopify://pages/exterior",
               "banner_four_style_3": "shopify://shop_images/img_606de066319fb_2f78110c-f328-4f1e-b83a-0ee7d2ada0f3.png",
@@ -3547,8 +3532,7 @@
       "1513253815146976218": {
         "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
