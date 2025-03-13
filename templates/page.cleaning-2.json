@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,7 +21,7 @@
         "16566585979d603897-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/krud-kutter-original-cleanerdegreaser.png",
+            "image": "shopify://shop_images/krud-kutter-original-cleanerdegreaser.png",
             "title": "Degreasers & Cleaners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -22,7 +31,7 @@
         "16566585979d603897-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3-1800-500x500jpg-removebg-preview_3f21044d-f6a1-4eba-8ef8-f8fd6e6a97c8.png",
+            "image": "shopify://shop_images/3-1800-500x500jpg-removebg-preview_3f21044d-f6a1-4eba-8ef8-f8fd6e6a97c8.png",
             "title": "Dust Removal",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -32,7 +41,7 @@
         "16566585979d603897-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1832_Painters_Comb_in_package-removebg.png",
+            "image": "shopify://shop_images/1832_Painters_Comb_in_package-removebg.png",
             "title": "Brush & Roller Cleaners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -42,17 +51,17 @@
         "image_DfyKV9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Terosyl_standard_thinner.png",
+            "image": "shopify://shop_images/Terosyl_standard_thinner.png",
             "title": "Thinners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
-            "link": "thinners"
+            "link": "thinners-solvents"
           }
         },
         "image_YtegiL": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Glutoclean-Mould-Cleaner-Remover-750.png",
+            "image": "shopify://shop_images/Glutoclean-Mould-Cleaner-Remover-750.png",
             "title": "Mould Removers",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -62,7 +71,7 @@
         "image_feUPwC": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Glutoclean-Hand-Clesner.png",
+            "image": "shopify://shop_images/Glutoclean-Hand-Clesner.png",
             "title": "Hand Cleaners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -72,7 +81,7 @@
         "image_fzfB4U": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/osmo.png",
+            "image": "shopify://shop_images/osmo.png",
             "title": "Floor Care",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
@@ -82,7 +91,7 @@
         "image_tczBmx": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wood-Reviver-Power-Gel-removebg.png",
+            "image": "shopify://shop_images/Wood-Reviver-Power-Gel-removebg.png",
             "title": "Decking Care",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
