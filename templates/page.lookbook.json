@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "wrapper": "div.lookbook-page",
   "sections": {
@@ -24,17 +33,17 @@
         "001215ff-e47e-4d8b-bd97-392596c6ee07": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/VMG02826-removebg-preview_56274804-5849-41ab-b540-0378b57ee80e.png",
+            "image": "shopify://shop_images/VMG02826-removebg-preview_56274804-5849-41ab-b540-0378b57ee80e.png",
             "title": "Thinners",
             "color_title": "#0f0f0f",
             "btn_shop_now": "Shop Now",
-            "link": "thinners"
+            "link": "thinners-solvents"
           }
         },
         "1656700628163e6de3-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/VMG02825-scaled-500x500.jpg",
+            "image": "shopify://shop_images/VMG02825-scaled-500x500.jpg",
             "title": "Brush Cleaner",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -44,7 +53,7 @@
         "1656700628163e6de3-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4044899430025.600x0-2-500x500.jpg",
+            "image": "shopify://shop_images/4044899430025.600x0-2-500x500.jpg",
             "title": "Degreasers",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -54,7 +63,7 @@
         "1656700628163e6de3-4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4044899387022.600x0-1-500x500.jpg",
+            "image": "shopify://shop_images/4044899387022.600x0-1-500x500.jpg",
             "title": "Mould Removers",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -64,7 +73,7 @@
         "1656700628163e6de3-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cleaning-img.jpg",
+            "image": "shopify://shop_images/cleaning-img.jpg",
             "title": "Dust Removal",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -74,7 +83,7 @@
         "4b29b7d8-0159-4149-8a01-ef978fb8b3dd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4044899648055.0x1000-500x500.jpg",
+            "image": "shopify://shop_images/4044899648055.0x1000-500x500.jpg",
             "title": "Hand Cleaner",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -84,7 +93,7 @@
         "f576203e-01e5-4a3c-ac18-7776658edd13": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4044899640349.500x0-500x500_1.jpg",
+            "image": "shopify://shop_images/4044899640349.500x0-500x500_1.jpg",
             "title": "Wallpaper & Paint Removal",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -94,7 +103,7 @@
         "1656700628163e6de3-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wash-and-Care-video-500x500.jpg",
+            "image": "shopify://shop_images/Wash-and-Care-video-500x500.jpg",
             "title": "Wooden Floor Care",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
@@ -104,7 +113,7 @@
         "8054b3bf-caae-43cb-b481-3b233d1371f8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wood-Reviver-Power-Gel-500x500.jpg",
+            "image": "shopify://shop_images/Wood-Reviver-Power-Gel-500x500.jpg",
             "title": "Decking Cleaning",
             "color_title": "#202020",
             "btn_shop_now": "Shop Now",
